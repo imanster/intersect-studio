@@ -6,9 +6,10 @@ interface ProjectCardProps {
   description: string;
   image: string;
   index: number;
+  onClick?: () => void;
 }
 
-const ProjectCard = ({ title, disciplines, description, image, index }: ProjectCardProps) => {
+const ProjectCard = ({ title, disciplines, description, image, index, onClick }: ProjectCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const rotations = [-2, 1, -1, 2, -1.5];
@@ -19,6 +20,7 @@ const ProjectCard = ({ title, disciplines, description, image, index }: ProjectC
       className="group relative cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={onClick}
       style={{
         animationDelay: `${index * 0.1}s`,
       }}
