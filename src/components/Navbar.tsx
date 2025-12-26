@@ -4,8 +4,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const links = [
-    { to: "/", label: "Work" },
-    { to: "/about", label: "About" },
+    { to: "/", label: "Home" },
     { to: "/resume", label: "Resume" },
   ];
 
