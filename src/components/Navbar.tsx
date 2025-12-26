@@ -5,6 +5,7 @@ const Navbar = () => {
 
   const links = [
     { to: "/", label: "Home" },
+    { to: "/work", label: "Work" },
     { to: "/resume", label: "Resume" },
   ];
 
