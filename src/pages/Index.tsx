@@ -178,7 +178,7 @@ const Index = () => {
                   ))}
                 </ul>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4 items-center">
                 <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                   <img
                     src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=400&auto=format"
@@ -186,7 +186,7 @@ const Index = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="aspect-square rounded-lg overflow-hidden bg-muted mt-8">
+                <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                   <img
                     src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400&auto=format"
                     alt="Books"
