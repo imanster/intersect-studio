@@ -24,33 +24,32 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Micro Intro */}
-      <section className="pt-28 pb-8 px-6 md:px-12">
+      {/* Introduction Section */}
+      <section className="pt-28 pb-16 px-6 md:px-12">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <h1 className="font-display text-2xl md:text-3xl font-bold">
-                Alex Chen
-              </h1>
-              <p className="text-muted-foreground">
-                Designer & Creative Technologist — San Francisco
-              </p>
-            </div>
-            <div className="flex items-center gap-3">
-              <a href="mailto:hello@alexchen.design" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                hello@alexchen.design
-              </a>
-              <span className="w-1 h-1 rounded-full bg-muted-foreground" />
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                LinkedIn
-              </a>
-            </div>
+          <div className="max-w-3xl">
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
+              Hello, I'm
+            </p>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Alex Chen
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6">
+              I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
+              I craft thoughtful digital experiences that bridge the gap between human needs and 
+              technological possibilities.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              With a background spanning UX design, creative coding, and spatial design, I bring 
+              a unique perspective to every project. I believe in the power of cross-disciplinary 
+              thinking and the magic that happens when different fields collide.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex items-center relative overflow-hidden px-6 md:px-12 pt-12">
+      <section className="min-h-[70vh] flex items-center relative overflow-hidden px-6 md:px-12">
         {/* Background decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -114,29 +113,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="py-24 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl">
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
-              Hello, I'm
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Alex Chen
-            </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6">
-              I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
-              I craft thoughtful digital experiences that bridge the gap between human needs and 
-              technological possibilities.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With a background spanning UX design, creative coding, and spatial design, I bring 
-              a unique perspective to every project. I believe in the power of cross-disciplinary 
-              thinking and the magic that happens when different fields collide.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* About Section */}
       <section className="py-24 px-6 md:px-12 bg-card/50">
