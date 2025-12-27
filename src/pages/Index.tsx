@@ -89,6 +89,30 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Introduction Section */}
+      <section className="py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl">
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
+              Hello, I'm
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Alex Chen
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6">
+              I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
+              I craft thoughtful digital experiences that bridge the gap between human needs and 
+              technological possibilities.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              With a background spanning UX design, creative coding, and spatial design, I bring 
+              a unique perspective to every project. I believe in the power of cross-disciplinary 
+              thinking and the magic that happens when different fields collide.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-24 px-6 md:px-12 bg-card/50">
         <div className="max-w-6xl mx-auto">
