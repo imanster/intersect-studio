@@ -7,10 +7,25 @@ export const projects: Project[] = [
     disciplines: ["UX Design", "Haptics", "Research"],
     description: "Exploring tactile feedback systems that bridge digital and physical interactions.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format",
-    fullDescription: "This project explores how tactile feedback can create more meaningful connections between users and digital interfaces. Through extensive research and prototyping, we developed a series of haptic patterns that communicate information through touch, making digital experiences more accessible and intuitive. The work spans from initial ethnographic research to functional prototypes tested with diverse user groups.",
+    fullDescription: "This project explores how tactile feedback can create more meaningful connections between users and digital interfaces. Through extensive research and prototyping, we developed a series of haptic patterns that communicate information through touch, making digital experiences more accessible and intuitive.",
+    detailedSections: [
+      {
+        title: "Research Methodology",
+        content: "Our approach combined ethnographic research with quantitative usability testing. We conducted interviews with 50+ participants across different age groups and abilities, observing how they naturally interact with physical objects and translating those insights into haptic design principles."
+      },
+      {
+        title: "Technical Implementation",
+        content: "The final prototype uses a combination of linear resonant actuators and piezoelectric elements to create nuanced tactile sensations. Custom firmware allows real-time adjustment of frequency, amplitude, and duration patterns."
+      }
+    ],
     year: "2023",
     client: "Research Lab",
     role: "Lead Designer & Researcher",
+    links: [
+      { label: "Research Paper", url: "#", type: "download" },
+      { label: "Project Demo", url: "#", type: "external" },
+      { label: "GitHub Repository", url: "#", type: "external" }
+    ],
     gallery: [
       "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800&auto=format",
       "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format",
@@ -52,11 +67,26 @@ export const projects: Project[] = [
     disciplines: ["Creative Coding", "Art", "Installation"],
     description: "Interactive digital installations responding to human presence and emotion.",
     image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format",
-    fullDescription: "Code as Canvas blurs the line between artist and algorithm. These installations use machine learning to interpret visitors' movements, facial expressions, and even heartbeats, generating unique visual responses that evolve throughout the exhibition. No two experiences are identical—each visitor becomes a collaborator in an ongoing conversation between human and machine creativity.",
+    fullDescription: "Code as Canvas blurs the line between artist and algorithm. These installations use machine learning to interpret visitors' movements, facial expressions, and even heartbeats, generating unique visual responses that evolve throughout the exhibition.",
+    detailedSections: [
+      {
+        title: "The Concept",
+        content: "No two experiences are identical—each visitor becomes a collaborator in an ongoing conversation between human and machine creativity. The installation learns from collective interactions, developing its own artistic 'style' over time."
+      },
+      {
+        title: "Technical Stack",
+        content: "Built using Processing and p5.js for visuals, with TensorFlow for real-time emotion detection. Custom WebSocket infrastructure enables synchronized experiences across multiple display surfaces."
+      }
+    ],
     year: "2022",
     client: "Digital Arts Museum",
     role: "Artist & Developer",
     link: "https://example.com",
+    links: [
+      { label: "Live Installation", url: "#", type: "external" },
+      { label: "Source Code", url: "#", type: "external" },
+      { label: "Exhibition Catalog (PDF)", url: "#", type: "download" }
+    ],
     gallery: [
       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format",
       "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&auto=format",

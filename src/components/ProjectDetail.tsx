@@ -1,5 +1,12 @@
-import { X, ExternalLink, ArrowLeft, ArrowRight } from "lucide-react";
+import { X, ExternalLink, ArrowLeft, ArrowRight, Download } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+
+export interface ProjectLink {
+  label: string;
+  url: string;
+  type?: "external" | "download";
+}
 
 export interface Project {
   id: string;
@@ -8,11 +15,16 @@ export interface Project {
   description: string;
   image: string;
   fullDescription?: string;
+  detailedSections?: {
+    title: string;
+    content: string;
+  }[];
   year?: string;
   client?: string;
   role?: string;
   gallery?: string[];
   link?: string;
+  links?: ProjectLink[];
 }
 
 interface ProjectDetailProps {
@@ -133,11 +145,62 @@ const ProjectDetail = ({ project, isOpen, onClose, onNext, onPrev }: ProjectDeta
             </div>
 
             {/* Description */}
-            <div className="prose prose-invert max-w-none mb-12">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {project.fullDescription || project.description}
-              </p>
+            <div className="space-y-8 mb-12">
+              <div className="prose prose-invert max-w-none">
+                <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
+                  {project.fullDescription || project.description}
+                </p>
+              </div>
+
+              {/* Detailed Sections */}
+              {project.detailedSections && project.detailedSections.length > 0 && (
+                <div className="space-y-8 pt-4">
+                  {project.detailedSections.map((section, index) => (
+                    <div key={index} className="space-y-3">
+                      <h3 className="font-display text-xl font-semibold text-foreground">
+                        {section.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed">
+                        {section.content}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
+
+            {/* Links & Downloads */}
+            {project.links && project.links.length > 0 && (
+              <div className="mb-12 p-6 rounded-xl bg-muted/50 border border-border">
+                <h3 className="font-display text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">
+                  Links & Resources
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {project.links.map((link, index) => (
+                    <Button
+                      key={index}
+                      variant="outline"
+                      asChild
+                      className="gap-2"
+                    >
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download={link.type === "download" ? true : undefined}
+                      >
+                        {link.type === "download" ? (
+                          <Download className="w-4 h-4" />
+                        ) : (
+                          <ExternalLink className="w-4 h-4" />
+                        )}
+                        {link.label}
+                      </a>
+                    </Button>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Gallery */}
             {project.gallery && project.gallery.length > 0 && (
