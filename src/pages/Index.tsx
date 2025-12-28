@@ -99,45 +99,43 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
-                Inter-disciplinary Designer
+                Inter-disciplinary Explorer
               </p>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
                 Designer, maker,
                 <br />
                 <span className="text-gradient">curious explorer</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-muted-foreground">
                 I work at the intersection of design, technology, and human experience. 
                 Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
               </p>
-              <div className="flex flex-wrap gap-3">
-                {["UX Design", "Creative Coding", "Spatial Design", "Brand Strategy"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6">
+            {/* Areas of Exploration */}
+            <div className="grid grid-cols-2 gap-4">
               {[
-                { number: "8+", label: "Years of Experience" },
-                { number: "50+", label: "Projects Completed" },
-                { number: "30+", label: "Happy Clients" },
-                { number: "12", label: "Awards Won" },
-              ].map((stat) => (
+                { area: "Game Design", icon: "🎮", description: "Interactive experiences & mechanics" },
+                { area: "Computer Science", icon: "💻", description: "Algorithms & systems thinking" },
+                { area: "Marketing", icon: "📈", description: "Strategy & user psychology" },
+                { area: "Design Thinking", icon: "💡", description: "Human-centered problem solving" },
+                { area: "UX/UI Design", icon: "✨", description: "Interfaces & user journeys" },
+                { area: "Creative Coding", icon: "🎨", description: "Generative art & visualizations" },
+              ].map((item, index) => (
                 <div
-                  key={stat.label}
-                  className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors duration-300 text-center"
+                  key={item.area}
+                  className="group p-5 rounded-xl bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-default"
+                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <p className="font-display text-3xl md:text-4xl font-bold text-primary mb-2">
-                    {stat.number}
+                  <span className="text-2xl mb-3 block group-hover:scale-110 transition-transform duration-300">
+                    {item.icon}
+                  </span>
+                  <p className="font-display font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
+                    {item.area}
                   </p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               ))}
             </div>
