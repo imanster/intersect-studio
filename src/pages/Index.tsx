@@ -93,6 +93,25 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Statement Section */}
+      <section className="py-24 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl">
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
+              Inter-disciplinary Designer
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
+              Designer, maker,
+              <br />
+              <span className="text-gradient">curious explorer</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              I work at the intersection of design, technology, and human experience. 
+              Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section className="py-24 px-6 md:px-12 bg-card/50">
