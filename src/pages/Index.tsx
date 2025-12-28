@@ -112,32 +112,69 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Areas of Exploration */}
-            <div className="grid grid-cols-2 gap-4">
+            {/* Orbital Constellation */}
+            <div className="relative aspect-square max-w-md mx-auto">
+              {/* Center node */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center z-10">
+                <span className="font-display font-bold text-primary text-xs text-center leading-tight">
+                  Me
+                </span>
+              </div>
+
+              {/* Orbital rings */}
+              <div className="absolute inset-8 rounded-full border border-border/30" />
+              <div className="absolute inset-0 rounded-full border border-border/20" />
+
+              {/* Connecting lines and nodes */}
               {[
-                { area: "Game Design", icon: "🎮", description: "Interactive experiences & mechanics" },
-                { area: "Computer Science", icon: "💻", description: "Algorithms & systems thinking" },
-                { area: "Marketing", icon: "📈", description: "Strategy & user psychology" },
-                { area: "Design Thinking", icon: "💡", description: "Human-centered problem solving" },
-                { area: "UX/UI Design", icon: "✨", description: "Interfaces & user journeys" },
-                { area: "Creative Coding", icon: "🎨", description: "Generative art & visualizations" },
-              ].map((item, index) => (
-                <div
-                  key={item.area}
-                  className="group p-5 rounded-xl bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all duration-300 cursor-default"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  <span className="text-2xl mb-3 block group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </span>
-                  <p className="font-display font-semibold text-sm mb-1 group-hover:text-primary transition-colors">
-                    {item.area}
-                  </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+                { label: "Game Design", angle: 0 },
+                { label: "Computer Science", angle: 60 },
+                { label: "Marketing", angle: 120 },
+                { label: "Design Thinking", angle: 180 },
+                { label: "UX/UI", angle: 240 },
+                { label: "Creative Coding", angle: 300 },
+              ].map((field, index) => {
+                const radius = 42; // percentage from center
+                const angleRad = (field.angle * Math.PI) / 180;
+                const x = 50 + radius * Math.cos(angleRad);
+                const y = 50 + radius * Math.sin(angleRad);
+                
+                return (
+                  <div key={field.label}>
+                    {/* Connecting line */}
+                    <svg
+                      className="absolute inset-0 w-full h-full pointer-events-none"
+                      style={{ zIndex: 1 }}
+                    >
+                      <line
+                        x1="50%"
+                        y1="50%"
+                        x2={`${x}%`}
+                        y2={`${y}%`}
+                        stroke="hsl(var(--primary))"
+                        strokeWidth="1"
+                        strokeOpacity="0.3"
+                      />
+                    </svg>
+                    
+                    {/* Node */}
+                    <div
+                      className="absolute -translate-x-1/2 -translate-y-1/2 group cursor-default"
+                      style={{
+                        left: `${x}%`,
+                        top: `${y}%`,
+                        zIndex: 5,
+                      }}
+                    >
+                      <div className="w-16 h-16 rounded-full bg-card border border-border group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300 flex items-center justify-center">
+                        <span className="font-display text-[10px] font-medium text-center leading-tight px-1 group-hover:text-primary transition-colors">
+                          {field.label}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
