@@ -24,32 +24,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Introduction Section */}
-      <section className="pt-28 pb-16 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl">
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
-              Hello, I'm
-            </p>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Alex Chen
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6">
-              I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
-              I craft thoughtful digital experiences that bridge the gap between human needs and 
-              technological possibilities.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With a background spanning UX design, creative coding, and spatial design, I bring 
-              a unique perspective to every project. I believe in the power of cross-disciplinary 
-              thinking and the magic that happens when different fields collide.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Hero Section */}
-      <section className="min-h-[70vh] flex items-center relative overflow-hidden px-6 md:px-12">
+      <section className="min-h-[90vh] flex items-center relative overflow-hidden px-6 md:px-12 pt-24">
         {/* Background decorative elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
@@ -61,16 +37,20 @@ const Index = () => {
             {/* Content */}
             <div className="order-2 lg:order-1">
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4 animate-fade-in">
-                Inter-disciplinary Designer
+                Hello, I'm
               </p>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 animate-slide-up">
-                Designer, maker,
-                <br />
-                <span className="text-gradient">curious explorer</span>
+                Alex Chen
               </h1>
-              <p className="text-lg text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-                I work at the intersection of design, technology, and human experience. 
-                Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
+                I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
+                I craft thoughtful digital experiences that bridge the gap between human needs and 
+                technological possibilities.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8 animate-slide-up" style={{ animationDelay: "0.15s" }}>
+                With a background spanning UX design, creative coding, and spatial design, I bring 
+                a unique perspective to every project. I believe in the power of cross-disciplinary 
+                thinking and the magic that happens when different fields collide.
               </p>
 
               <div className="flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
