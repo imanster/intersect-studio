@@ -94,21 +94,53 @@ const Index = () => {
       </section>
 
       {/* Statement Section */}
-      <section className="py-24 px-6 md:px-12">
+      <section className="py-24 px-6 md:px-12 bg-gradient-to-b from-background to-card/30">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl">
-            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
-              Inter-disciplinary Designer
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
-              Designer, maker,
-              <br />
-              <span className="text-gradient">curious explorer</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              I work at the intersection of design, technology, and human experience. 
-              Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
+                Inter-disciplinary Designer
+              </p>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
+                Designer, maker,
+                <br />
+                <span className="text-gradient">curious explorer</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                I work at the intersection of design, technology, and human experience. 
+                Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {["UX Design", "Creative Coding", "Spatial Design", "Brand Strategy"].map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Stats */}
+            <div className="grid grid-cols-2 gap-6">
+              {[
+                { number: "8+", label: "Years of Experience" },
+                { number: "50+", label: "Projects Completed" },
+                { number: "30+", label: "Happy Clients" },
+                { number: "12", label: "Awards Won" },
+              ].map((stat) => (
+                <div
+                  key={stat.label}
+                  className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-colors duration-300 text-center"
+                >
+                  <p className="font-display text-3xl md:text-4xl font-bold text-primary mb-2">
+                    {stat.number}
+                  </p>
+                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
