@@ -128,11 +128,14 @@ const Index = () => {
               {/* Connecting lines and nodes */}
               {[
                 { label: "Game Design", angle: 0 },
-                { label: "Computer Science", angle: 60 },
-                { label: "Marketing", angle: 120 },
-                { label: "Design Thinking", angle: 180 },
-                { label: "UX/UI", angle: 240 },
-                { label: "Creative Coding", angle: 300 },
+                { label: "Computer Science", angle: 40 },
+                { label: "Marketing", angle: 80 },
+                { label: "Design Thinking", angle: 120 },
+                { label: "UX/UI", angle: 160 },
+                { label: "Creative Coding", angle: 200 },
+                { label: "Psychology", angle: 240 },
+                { label: "Business", angle: 280 },
+                { label: "Film", angle: 320 },
               ].map((field, index) => {
                 const radius = 42; // percentage from center
                 const angleRad = (field.angle * Math.PI) / 180;
