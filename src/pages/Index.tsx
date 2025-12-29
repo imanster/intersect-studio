@@ -25,44 +25,49 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="min-h-[90vh] flex items-center relative overflow-hidden px-6 md:px-12 pt-24">
-        {/* Background decorative elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-          <div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
-        </div>
+      <section className="min-h-screen flex items-center relative overflow-hidden px-6 md:px-12">
+        {/* Background gradient */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,hsl(var(--accent)/0.1),transparent_50%)]" />
+        
+        {/* Animated grid lines */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
+                           linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
+          backgroundSize: '60px 60px'
+        }} />
 
-        <div className="max-w-6xl mx-auto w-full relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        {/* Floating orbs */}
+        <div className="absolute top-20 left-[10%] w-72 h-72 bg-primary/20 rounded-full blur-[100px] animate-pulse" />
+        <div className="absolute bottom-20 right-[15%] w-96 h-96 bg-accent/15 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: "2s" }} />
+
+        <div className="max-w-7xl mx-auto w-full relative z-10 pt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Content */}
-            <div className="order-2 lg:order-1">
-              <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4 animate-fade-in">
+            <div className="lg:col-span-7 order-2 lg:order-1">
+              <p className="font-display text-sm uppercase tracking-[0.4em] text-primary mb-6 animate-fade-in">
                 Hello, I'm
               </p>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6 animate-slide-up">
-                Alex Chen
+              <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                Alex
+                <br />
+                <span className="text-gradient">Chen</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-6 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-                I'm a multi-disciplinary designer and creative technologist based in San Francisco. 
-                I craft thoughtful digital experiences that bridge the gap between human needs and 
-                technological possibilities.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8 animate-slide-up" style={{ animationDelay: "0.15s" }}>
-                With a background spanning UX design, creative coding, and spatial design, I bring 
-                a unique perspective to every project. I believe in the power of cross-disciplinary 
-                thinking and the magic that happens when different fields collide.
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-10 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
+                Multi-disciplinary designer & creative technologist crafting digital experiences at the intersection of human needs and technology.
               </p>
 
-              <div className="flex flex-wrap gap-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+              <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
                 <a
                   href="#work"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-display font-semibold uppercase tracking-wider text-sm rounded-full hover:scale-105 transition-transform duration-300"
+                  className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-display font-semibold uppercase tracking-wider text-sm rounded-full hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300"
                 >
-                  View Projects <ArrowDown className="w-4 h-4" />
+                  View Projects 
+                  <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
                 </a>
                 <Link
                   to="/resume"
-                  className="px-6 py-3 border border-border text-foreground font-display font-semibold uppercase tracking-wider text-sm rounded-full hover:border-primary hover:text-primary transition-colors duration-300"
+                  className="px-8 py-4 border border-border text-foreground font-display font-semibold uppercase tracking-wider text-sm rounded-full hover:border-primary hover:text-primary hover:bg-primary/5 transition-all duration-300"
                 >
                   View Resume
                 </Link>
@@ -70,26 +75,32 @@ const Index = () => {
             </div>
 
             {/* Image */}
-            <div className="relative order-1 lg:order-2 animate-fade-in">
-              <div className="aspect-[4/5] max-w-md mx-auto lg:max-w-none rounded-lg overflow-hidden bg-muted">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format"
-                  alt="Portrait"
-                  className="w-full h-full object-cover"
-                />
+            <div className="lg:col-span-5 relative order-1 lg:order-2 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+              <div className="relative">
+                {/* Glow behind image */}
+                <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 rounded-2xl blur-2xl" />
+                
+                <div className="relative aspect-[3/4] max-w-sm mx-auto lg:max-w-none rounded-2xl overflow-hidden border border-border/50">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format"
+                    alt="Portrait"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                </div>
+                
+                {/* Decorative corner accent */}
+                <div className="absolute -bottom-3 -right-3 w-24 h-24 border-2 border-primary rounded-xl" />
               </div>
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-primary rounded-lg -z-10" />
-              <div className="absolute -top-4 -left-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl -z-10" />
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float hidden md:block">
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-muted-foreground rounded-full" />
-          </div>
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3">
+          <span className="text-xs uppercase tracking-widest text-muted-foreground">Scroll</span>
+          <div className="w-px h-12 bg-gradient-to-b from-muted-foreground to-transparent" />
         </div>
       </section>
 
