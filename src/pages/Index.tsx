@@ -113,7 +113,7 @@ const Index = () => {
             </div>
 
             {/* Orbital Constellation */}
-            <div className="relative aspect-square max-w-md mx-auto">
+            <div className="relative aspect-square w-full max-w-lg mx-auto">
               {/* Center node */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center z-10">
                 <span className="font-display font-bold text-primary text-xs text-center leading-tight">
@@ -125,59 +125,64 @@ const Index = () => {
               <div className="absolute inset-8 rounded-full border border-border/30" />
               <div className="absolute inset-0 rounded-full border border-border/20" />
 
-              {/* Connecting lines and nodes */}
-              {[
-                { label: "Game Design", angle: 0 },
-                { label: "Computer Science", angle: 40 },
-                { label: "Marketing", angle: 80 },
-                { label: "Design Thinking", angle: 120 },
-                { label: "UX/UI", angle: 160 },
-                { label: "Creative Coding", angle: 200 },
-                { label: "Psychology", angle: 240 },
-                { label: "Business", angle: 280 },
-                { label: "Film", angle: 320 },
-              ].map((field, index) => {
-                const radius = 42; // percentage from center
-                const angleRad = (field.angle * Math.PI) / 180;
-                const x = 50 + radius * Math.cos(angleRad);
-                const y = 50 + radius * Math.sin(angleRad);
+              {(() => {
+                const fields = [
+                  "Game Design",
+                  "Computer Science", 
+                  "Marketing",
+                  "Design Thinking",
+                  "UX/UI",
+                  "Creative Coding",
+                  "Psychology",
+                  "Business",
+                  "Film",
+                ];
+                const angleStep = 360 / fields.length;
                 
-                return (
-                  <div key={field.label}>
-                    {/* Connecting line */}
-                    <svg
-                      className="absolute inset-0 w-full h-full pointer-events-none"
-                      style={{ zIndex: 1 }}
-                    >
-                      <line
-                        x1="50%"
-                        y1="50%"
-                        x2={`${x}%`}
-                        y2={`${y}%`}
-                        stroke="hsl(var(--primary))"
-                        strokeWidth="1"
-                        strokeOpacity="0.3"
-                      />
-                    </svg>
-                    
-                    {/* Node */}
-                    <div
-                      className="absolute -translate-x-1/2 -translate-y-1/2 group cursor-default"
-                      style={{
-                        left: `${x}%`,
-                        top: `${y}%`,
-                        zIndex: 5,
-                      }}
-                    >
-                      <div className="w-16 h-16 rounded-full bg-card border border-border group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300 flex items-center justify-center">
-                        <span className="font-display text-[10px] font-medium text-center leading-tight px-1 group-hover:text-primary transition-colors">
-                          {field.label}
-                        </span>
+                return fields.map((label, index) => {
+                  const angle = index * angleStep - 90; // Start from top
+                  const radius = 42;
+                  const angleRad = (angle * Math.PI) / 180;
+                  const x = 50 + radius * Math.cos(angleRad);
+                  const y = 50 + radius * Math.sin(angleRad);
+                
+                  return (
+                    <div key={label}>
+                      {/* Connecting line */}
+                      <svg
+                        className="absolute inset-0 w-full h-full pointer-events-none"
+                        style={{ zIndex: 1 }}
+                      >
+                        <line
+                          x1="50%"
+                          y1="50%"
+                          x2={`${x}%`}
+                          y2={`${y}%`}
+                          stroke="hsl(var(--primary))"
+                          strokeWidth="1"
+                          strokeOpacity="0.3"
+                        />
+                      </svg>
+                      
+                      {/* Node */}
+                      <div
+                        className="absolute -translate-x-1/2 -translate-y-1/2 group cursor-default"
+                        style={{
+                          left: `${x}%`,
+                          top: `${y}%`,
+                          zIndex: 5,
+                        }}
+                      >
+                        <div className="w-12 h-12 rounded-full bg-card border border-border group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300 flex items-center justify-center">
+                          <span className="font-display text-[9px] font-medium text-center leading-tight px-1 group-hover:text-primary transition-colors">
+                            {label}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                });
+              })()}
             </div>
           </div>
         </div>
