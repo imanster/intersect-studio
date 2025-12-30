@@ -3,8 +3,29 @@ import ProjectsGrid from "@/components/ProjectsGrid";
 import Footer from "@/components/Footer";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [scrollOpacity, setScrollOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const fadeStart = 50;
+      const fadeEnd = 200;
+      const scrollY = window.scrollY;
+      
+      if (scrollY <= fadeStart) {
+        setScrollOpacity(1);
+      } else if (scrollY >= fadeEnd) {
+        setScrollOpacity(0);
+      } else {
+        setScrollOpacity(1 - (scrollY - fadeStart) / (fadeEnd - fadeStart));
+      }
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   const values = [
     {
       title: "Cross-Pollination",
@@ -98,7 +119,10 @@ const Index = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3">
+        <div 
+          className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 transition-opacity duration-300"
+          style={{ opacity: scrollOpacity }}
+        >
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Scroll</span>
           <div className="w-px h-12 bg-gradient-to-b from-muted-foreground to-transparent" />
         </div>
