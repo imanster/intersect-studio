@@ -1,7 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
     { to: "/", label: "Home" },
@@ -10,7 +20,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-6 md:px-12">
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 px-6 py-6 md:px-12 transition-all duration-300 ${
+        scrolled 
+          ? "bg-background/80 backdrop-blur-md border-b border-border/50 py-4" 
+          : ""
+      }`}
+    >
       <div className="flex items-center justify-between">
         <Link 
           to="/" 
