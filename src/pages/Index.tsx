@@ -29,15 +29,15 @@ const Index = () => {
   const values = [
     {
       title: "Building from Zero",
-      description: "I’m comfortable starting where structure doesn’t yet exist. I work through ambiguity, define the problem as I go, and turn early ideas into systems that can actually function in the real world.",
+      description: "I’m comfortable starting where structure doesn’t yet exist, often working through ambiguity to turn early ideas into functional systems.",
     },
     {
       title: "Working Across Disciplines",
-      description: "I don’t stay inside a single field. My work draws from design, technology, systems thinking, and narrative; using whatever tools or perspectives the problem demands rather than forcing a predefined approach.",
+      description: "I work across disciplines, drawing from design, technology, and systems thinking depending on what a project demands.",
     },
     {
       title: "Curiosity as Method",
-      description: "I use curiosity deliberately. By questioning assumptions and testing ideas early, I find directions that don’t emerge from linear or purely analytical approaches.",
+      description: "I use curiosity deliberately, questioning assumptions and testing ideas early to explore directions beyond linear approaches.",
     },
   ];
 
@@ -155,10 +155,9 @@ const Index = () => {
                 "Marketing",
                 "Design Thinking",
                 "UX/UI",
-                "Creative Coding",
-                "Psychology",
-                "Business",
-                "Film",
+                "Business Design",
+                "Information Design",
+                "Prompt Engineering",
               ].map((field, index) => (
                 <span
                   key={field}
@@ -186,18 +185,16 @@ const Index = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm an inter-disciplinary designer who believes the most interesting work happens 
-                  at the edges—where design meets technology, where art meets function, where the 
-                  expected meets the unexpected.
+                  I’m currently a student exploring how ideas move from early concepts to workable systems.
+                  I’m drawn to problems that aren’t fully defined and enjoy figuring out structure as part of the process.
                 </p>
                 <p>
-                  My practice spans UX design, creative coding, spatial design, and everything in 
-                  between. I don't believe in silos. Every project is an opportunity to pull from 
-                  different disciplines and create something that couldn't exist within any single one.
+                  My work spans multiple disciplines.
+                  I draw from design, technology, and systems thinking, choosing tools based on what the problem needs rather than staying within a single field.
                 </p>
                 <p>
-                  When I'm not designing, you'll find me experimenting with new tools, collecting 
-                  unusual materials, or getting lost in a museum somewhere.
+                  I approach projects through experimentation and making—testing assumptions, iterating, and letting curiosity guide direction.
+                  Outside of coursework, I experiment with tools, study existing systems, and observe how people interact with products, spaces, and narratives.
                 </p>
               </div>
             </div>
@@ -246,11 +243,11 @@ const Index = () => {
                 </h2>
                 <ul className="space-y-4">
                   {[
-                    "Currently obsessed with generative typography",
-                    "Collect vintage design books from the 60s & 70s",
-                    "Believe every designer should know how to code",
-                    "Coffee in the morning, tea in the afternoon",
-                    "Always have a sketchbook within arm's reach",
+                    "Obsessed with building systems",
+                    "Collect decks of playing cards",
+                    "Default mode is to think out of the box",
+                    "Chess and cricket enthusiast",
+                    "Tattoo fanatic (maybe too much)",
                   ].map((fact, index) => (
                     <li
                       key={index}
