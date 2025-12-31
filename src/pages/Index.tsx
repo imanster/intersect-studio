@@ -70,12 +70,12 @@ const Index = () => {
                 Hello, I'm
               </p>
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-                Alex
+                Ishaan
                 <br />
-                <span className="text-gradient">Chen</span>
+                <span className="text-gradient">Karnani</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mb-10 max-w-xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                Multi-disciplinary designer & creative technologist crafting digital experiences at the intersection of human needs and technology.
+                Multi-disciplinary designer crafting experiences at the intersection of various fields.
               </p>
 
               <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
