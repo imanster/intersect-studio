@@ -139,11 +139,11 @@ const Index = () => {
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
                 Designer, maker,
                 <br />
-                <span className="text-gradient">curious explorer</span>
+                <span className="text-gradient">building from ideas</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                I work at the intersection of design, technology, and human experience. 
-                Each project is a new exploration—a blend of mediums, ideas, and unexpected connections.
+                I work across design and technology, using projects to explore systems,
+                test concepts, and understand how ideas translate into real-world use.
               </p>
             </div>
 
@@ -193,7 +193,7 @@ const Index = () => {
                   I draw from design, technology, and systems thinking, choosing tools based on what the problem needs rather than staying within a single field.
                 </p>
                 <p>
-                  I approach projects through experimentation and making—testing assumptions, iterating, and letting curiosity guide direction.
+                  I approach projects through experimentation and making; testing assumptions, iterating, and letting curiosity guide direction.
                   Outside of coursework, I experiment with tools, study existing systems, and observe how people interact with products, spaces, and narratives.
                 </p>
               </div>
