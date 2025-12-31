@@ -2,29 +2,36 @@ import { Project } from "@/components/ProjectDetail";
 
 export const projects: Project[] = [
   {
-    id: "sensory-interfaces",
-    title: "Sensory Interfaces",
-    disciplines: ["UX Design", "Haptics", "Research"],
-    description: "Exploring tactile feedback systems that bridge digital and physical interactions.",
+    id: "the-spark",
+    title: "The Spark",
+    disciplines: ["UI/UX Design", "Interaction Design", "Psychology"],
+    description: "",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format",
-    fullDescription: "This project explores how tactile feedback can create more meaningful connections between users and digital interfaces. Through extensive research and prototyping, we developed a series of haptic patterns that communicate information through touch, making digital experiences more accessible and intuitive.",
+    fullDescription: "This project was built with the objective of trying to make a meaningful impact in the daily life of ADHD patients. I built a study tool for people with ADHD and low attention spans to use in a classroom setting to help reduce distractions.",
     detailedSections: [
       {
         title: "Research Methodology",
-        content: "Our approach combined ethnographic research with quantitative usability testing. We conducted interviews with 50+ participants across different age groups and abilities, observing how they naturally interact with physical objects and translating those insights into haptic design principles."
+        content: "My research process involved a lot of interactions with diagnosed ADHD patients, trying to understand what their triggers are, as well as what they use in order to reduce distractions. Through this, I identified their use of 'brain dead games', which are video games that do not require too much thinking, but keep them engaged enough for them to pay attention to lectures."
+      },
+      {
+        title: "Concept Building",
+        content: "The problem with existing 'brain dead games', is that they are either too engaging or not engaging enough. As such, my solution was to build a game which balances the two. Overly engaging games will completely absorb the player, while under-engaging games will get dropped soon."
       },
       {
         title: "Technical Implementation",
-        content: "The final prototype uses a combination of linear resonant actuators and piezoelectric elements to create nuanced tactile sensations. Custom firmware allows real-time adjustment of frequency, amplitude, and duration patterns."
+        content: "The final prototype is a desktop game, which is ideally meant to be played on a laptop in a classroom setting. It is meant to be used as a support tool with proper notetaking tools to be used alongside it. The UI of the game utilized colour and shape theory, and also took went through multiple iterations during the user testing phase."
+      },
+      {
+        title: "Outcome",
+        content: "Participants using the game showed a noticeable improvement in their concentration, and also reported a positive result in their concentration levels."
       }
     ],
-    year: "2023",
-    client: "Research Lab",
-    role: "Lead Designer & Researcher",
+    year: "2024",
+    client: "Interaction Design Course",
+    role: "Everything",
     links: [
-      { label: "Research Paper", url: "#", type: "download" },
-      { label: "Project Demo", url: "#", type: "external" },
-      { label: "GitHub Repository", url: "#", type: "external" }
+      { label: "Download", url: "#", type: "download" },
+      { label: "Design Logs", url: "#", type: "external" }
     ],
     gallery: [
       "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800&auto=format",

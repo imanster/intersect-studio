@@ -129,6 +129,8 @@ const Resume = () => {
           "Organizing committee for the HCIPAI Symposium 2025",
           "Presented my project during the HCIPAI Symposium 2025",
           "Presented abstract during UG Research Day 2025",
+          "Taught programming to students of Class 9 at Mahatma Phule Vidyalay, Lavale",
+          "Taught chess to children at Bal Bhavan, FLAME University"
         ],
       },
     },
