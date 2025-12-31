@@ -28,16 +28,16 @@ const Index = () => {
   }, []);
   const values = [
     {
-      title: "Cross-Pollination",
-      description: "The best ideas emerge when disciplines collide. I actively seek connections between seemingly unrelated fields.",
+      title: "Building from Zero",
+      description: "I’m comfortable starting where structure doesn’t yet exist. I work through ambiguity, define the problem as I go, and turn early ideas into systems that can actually function in the real world.",
     },
     {
-      title: "Process as Product",
-      description: "The journey matters as much as the destination. I document, share, and learn from every step of the creative process.",
+      title: "Working Across Disciplines",
+      description: "I don’t stay inside a single field. My work draws from design, technology, systems thinking, and narrative; using whatever tools or perspectives the problem demands rather than forcing a predefined approach.",
     },
     {
-      title: "Human-Centered",
-      description: "Technology should serve people, not the other way around. Every project starts with understanding human needs and experiences.",
+      title: "Curiosity as Method",
+      description: "I use curiosity deliberately. By questioning assumptions and testing ideas early, I find directions that don’t emerge from linear or purely analytical approaches.",
     },
   ];
 
