@@ -41,118 +41,104 @@ const Resume = () => {
 
   const experience: ExperienceItem[] = [
     {
-      role: "Senior Designer",
-      company: "Creative Studio",
-      period: "2022 — Present",
-      description: "Leading cross-functional design projects spanning digital products, physical installations, and brand systems.",
+      role: "Management Trainee - Content Strategy + Community Building ",
+      company: "Telosa",
+      period: "May 2025 — Sept 2025",
+      description: "Worked on shaping content strategy and building early-stage community engagement across digital platforms.",
       details: {
-        overview: "As Senior Designer, I lead a team of 5 designers working on high-profile clients across tech, fashion, and cultural institutions.",
+        overview: "As a Management Trainee, I supported content planning, community initiatives, and exploratory research for an early-stage organization. My role involved translating abstract goals into structured content systems and experimenting with ways to build and sustain an engaged community.",
         projects: [
-          { name: "Brand Identity System", description: "Complete rebrand for a Fortune 500 tech company including digital and physical touchpoints." },
-          { name: "Interactive Installation", description: "40-foot interactive LED wall for a major museum exhibition on climate change." },
-          { name: "Mobile App Redesign", description: "End-to-end redesign of a fintech app serving 2M+ users." },
+          { name: "Build Mode by Telosa", description: "Created content for the Build Mode by Telosa YouTube Channel." },
         ],
         achievements: [
-          "Promoted to Senior Designer within 18 months",
-          "Led projects generating $2M+ in revenue",
-          "Mentored 3 junior designers",
+          "Scripted, shot and edited 13 short form videos and 4 long form videos.",
+          "Built the pre-development proof of concept for the platform dashboard",
         ],
-        technologies: ["Figma", "Blender", "TouchDesigner", "After Effects"],
+        technologies: ["DaVinci Resolve", "Lovable", "Canva"],
       },
     },
     {
-      role: "Design Lead",
-      company: "Innovation Lab",
-      period: "2020 — 2022",
-      description: "Directed experimental design initiatives exploring emerging technologies and human-centered experiences.",
+      role: "Software Development Intern",
+      company: "Willwali",
+      period: "May 2024 — Aug 2024",
+      description: "Contributed to improving the usability and reliability of a complex digital platform by working in quality assurance in a cross-functional, remote team.",
       details: {
-        overview: "Led the design team at an R&D focused innovation lab, exploring the intersection of emerging technology and human experience.",
-        projects: [
-          { name: "AR Wayfinding", description: "Augmented reality navigation system for a major airport." },
-          { name: "Voice UI Framework", description: "Design system for conversational interfaces used across 5 products." },
-        ],
-        achievements: [
-          "Filed 2 design patents",
-          "Presented at SXSW Interactive",
-          "Built design team from 2 to 8 members",
-        ],
-        technologies: ["Unity", "ARKit", "Figma", "Principle"],
+        overview: "Worked at the intersection of product, design, and development to improve usability and stability of a complex platform. Contributed to the behind-the-scenes quality assurance.",
+        technologies: ["Figma", "Visual Studio Code", "Python"],
       },
     },
     {
-      role: "Designer",
-      company: "Design Agency",
-      period: "2018 — 2020",
-      description: "Collaborated on diverse client projects from UX design to environmental graphics and motion design.",
+      role: "Research Intern",
+      company: "KEM Hospital Research Centre",
+      period: "May 2023 — June 2023",
+      description: "Worked on healthcare-focused research and systems improvement projects, combining field research, data workflows, and community-oriented design to support medical teams and outreach initiatives.",
       details: {
-        overview: "Worked across a wide range of client projects, developing skills in multiple design disciplines.",
+        overview: "Supported research and healthcare delivery through systems improvement, field research, and community-focused design work in medical and rural contexts.",
         projects: [
-          { name: "E-commerce Platform", description: "UX/UI design for a luxury retail brand's online store." },
-          { name: "Environmental Graphics", description: "Signage and wayfinding for a new corporate headquarters." },
+          { name: "Patient Data Storage System Rework", description: "Rebuilt the patient data storage and file tracking system. Used non-technical tools for usage ease." },
         ],
         achievements: [
-          "Awarded 'Rising Star' by agency leadership",
-          "Work featured in Communication Arts",
+          "Assisted on health camp visits to Raigadh 10+ times",
         ],
-        technologies: ["Sketch", "InVision", "After Effects", "Illustrator"],
+        technologies: ["Excel", "Powerpoint"],
       },
     },
   ];
 
   const education: EducationItem[] = [
     {
-      degree: "MFA Design & Technology",
-      school: "Parsons School of Design",
-      period: "2016 — 2018",
+      degree: "MBA in Marketing",
+      school: "FLAME University",
+      period: "2025 — Present",
       details: {
-        overview: "Focused on the intersection of design, technology, and social impact. Thesis explored generative design systems for urban planning.",
+        overview: "Majoring in Marketing while keeping an open minor.",
         courses: [
-          "Creative Computing",
-          "Data Visualization",
-          "Physical Computing",
-          "Design Research Methods",
-          "Interaction Design Studio",
+          "Marketing Management",
+          "AI in Business",
+          "Organizational Behaviour",
         ],
         projects: [
-          { name: "Thesis: Generative Urbanism", description: "A tool for visualizing and simulating urban growth patterns using machine learning." },
-          { name: "Community Mapping", description: "Interactive installation documenting immigrant stories in NYC neighborhoods." },
+          { name: "Course Recommendation System", description: "Created a blueprint for a course recommendation system for students to use." },
+          { name: "Karnani ke Notes", description: "Built a community where I share notes of all classes to my entire batch (Free of Cost)." },
         ],
         achievements: [
-          "Graduated with Distinction",
-          "Thesis selected for school exhibition",
-          "Teaching Assistant for Creative Computing",
+          "Research assistant",
         ],
       },
     },
     {
-      degree: "BFA Graphic Design",
-      school: "Rhode Island School of Design",
-      period: "2012 — 2016",
+      degree: "BSc. in Computer Science and Design",
+      school: "FLAME University",
+      period: "2012 — 2025",
       details: {
-        overview: "Comprehensive foundation in visual design, typography, and design thinking.",
+        overview: "Comprehensive foundation in inter-disciplinary design, with special focus on technologicy oriented design subjects.",
         courses: [
-          "Typography I-IV",
-          "Visual Systems",
-          "Publication Design",
-          "Motion Graphics",
-          "Design History",
+          "Business Design",
+          "Information Design and Data Visualization",
+          "Data Driven Design",
+          "Interaction Design",
+          "Immersive Design",
         ],
         projects: [
-          { name: "Senior Thesis", description: "Experimental publication exploring the future of print in a digital age." },
+          { name: "The Spark", description: "Study tool for people with ADHD and low attention spans to use in a classroom setting." },
+          { name: "Kuberos", description: "Designed a financial education platform for children." },
+          { name: "Spotify Trapped", description: "Working mockup of a new AR Spotify Feature." },
+          { name: "Navigating Wicked Problems", description: "Abstract writeup submitted for UG Research Day 2025" },
         ],
         achievements: [
-          "Dean's List all semesters",
-          "Student Excellence Award in Typography",
+          "Organizing committee for the HCIPAI Symposium 2025",
+          "Presented my project during the HCIPAI Symposium 2025",
+          "Presented abstract during UG Research Day 2025",
         ],
       },
     },
   ];
 
   const skills = [
-    { category: "Design", items: ["UX/UI", "Visual Design", "Motion", "3D", "Spatial"] },
-    { category: "Tools", items: ["Figma", "Blender", "After Effects", "TouchDesigner", "Unity"] },
-    { category: "Code", items: ["HTML/CSS", "JavaScript", "React", "Processing", "Arduino"] },
-    { category: "Methods", items: ["Research", "Prototyping", "Systems Thinking", "Facilitation"] },
+    { category: "Design", items: ["UX/UI Design", "Interaction Design", "Service Design", "Product Design", "Business Design", "Immersive Design"] },
+    { category: "Tools", items: ["Figma", "Blender", "DaVinci Resolve", "Canva", "Unity", "Prompt Engineering"] },
+    { category: "Code", items: ["HTML/CSS", "Python", "C++"] },
+    { category: "Methods", items: ["Research", "Prototyping", "Systems Thinking"] },
   ];
 
   return (
