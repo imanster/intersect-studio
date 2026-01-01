@@ -1,15 +1,12 @@
 import Navbar from "@/components/Navbar";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import Footer from "@/components/Footer";
-import { ArrowRight, ArrowDown, Zap, ZapOff } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { Switch } from "@/components/ui/switch";
-import { useColorShift } from "@/contexts/ColorShiftContext";
 
 const Index = () => {
   const [scrollOpacity, setScrollOpacity] = useState(1);
-  const { isColorShiftEnabled, toggleColorShift } = useColorShift();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,23 +47,6 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden px-6 md:px-12">
-        {/* Color Shift Toggle */}
-        <div className="absolute top-24 right-6 md:right-12 z-20 flex items-center gap-3 px-4 py-2 rounded-full bg-card/80 backdrop-blur-sm border border-border">
-          {isColorShiftEnabled ? (
-            <Zap className="w-4 h-4 text-primary" />
-          ) : (
-            <ZapOff className="w-4 h-4 text-muted-foreground" />
-          )}
-          <span className="text-xs uppercase tracking-wider text-muted-foreground hidden sm:inline">
-            Color Shift
-          </span>
-          <Switch 
-            checked={isColorShiftEnabled} 
-            onCheckedChange={toggleColorShift}
-            className="data-[state=checked]:bg-primary"
-          />
-        </div>
-
         {/* Background gradient */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.15),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,hsl(var(--accent)/0.1),transparent_50%)]" />
