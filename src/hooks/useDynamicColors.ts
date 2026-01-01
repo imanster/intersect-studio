@@ -1,4 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
+import { useColorShift } from '@/contexts/ColorShiftContext';
 
 const COLOR_HUES = [
   270,  // Purple
@@ -18,11 +19,12 @@ const COLOR_HUES = [
 ];
 
 export const useDynamicColors = () => {
+  const { isColorShiftEnabled } = useColorShift();
   const currentIndex = useRef(0);
   const isTransitioning = useRef(false);
 
   const updateColors = useCallback(() => {
-    if (isTransitioning.current) return;
+    if (isTransitioning.current || !isColorShiftEnabled) return;
     
     isTransitioning.current = true;
     currentIndex.current = (currentIndex.current + 1) % COLOR_HUES.length;
@@ -53,7 +55,7 @@ export const useDynamicColors = () => {
     setTimeout(() => {
       isTransitioning.current = false;
     }, 500);
-  }, []);
+  }, [isColorShiftEnabled]);
 
   useEffect(() => {
     // Add CSS transition for smooth color changes
