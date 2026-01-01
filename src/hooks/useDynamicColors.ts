@@ -1,6 +1,21 @@
 import { useEffect, useRef, useCallback } from 'react';
 
-const COLOR_HUES = [270, 300, 330, 200, 180, 240]; // Purple, Magenta, Pink, Cyan, Teal, Blue
+const COLOR_HUES = [
+  270,  // Purple
+  300,  // Magenta
+  330,  // Pink
+  0,    // Red
+  30,   // Orange
+  45,   // Gold
+  60,   // Yellow
+  120,  // Green
+  160,  // Emerald
+  180,  // Teal
+  200,  // Cyan
+  220,  // Sky Blue
+  240,  // Blue
+  260,  // Indigo
+];
 
 export const useDynamicColors = () => {
   const currentIndex = useRef(0);
