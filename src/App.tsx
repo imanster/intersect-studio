@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import Work from "./pages/Work";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
+import Mascot from "./components/Mascot";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <Mascot />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
