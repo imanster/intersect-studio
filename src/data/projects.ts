@@ -31,7 +31,7 @@ export const projects: Project[] = [
     role: "Everything",
     links: [
       { label: "Download", url: "#", type: "download" },
-      { label: "Design Logs", url: "#", type: "external" }
+      { label: "Design Logs", url: "#", type: "download" }
     ],
     gallery: [
       "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800&auto=format",
@@ -39,15 +39,33 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "urban-rhythms",
-    title: "Urban Rhythms",
-    disciplines: ["Data Viz", "Architecture", "Sound"],
-    description: "Translating city movement patterns into generative audio-visual experiences.",
+    id: "kuberos",
+    title: "Kuberos",
+    disciplines: ["UX Design", "Education"],
+    description: "Financial literacy platform for children.",
     image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&auto=format",
-    fullDescription: "Urban Rhythms captures the pulse of city life by transforming pedestrian movement data into immersive audiovisual compositions. Using custom sensors placed throughout a metropolitan area, we collected months of movement patterns and translated them into generative art that reflects the unique character of each neighborhood. The installation invites viewers to experience their city in an entirely new way.",
-    year: "2023",
-    client: "City Arts Council",
-    role: "Creative Director",
+    fullDescription: "Kuberos is a financial literacy platform designed to imbibe financial skills in children with the help of a mock economy. The platform's design focuses on creating a space for children to learn financial literacy by earning and spending money in the mock economy, resulting in a more practical learning environment.",
+    detailedSections: [
+      {
+        title: "Research Methodology",
+        content: "After completing secondary research, I started talking to parents to understand how they taught financial skills and knowledge to their children. This was also how I learned about their understanding of finances, their children's understanding of money, and other such information. I identified a gap in the current systems that these parents follow."
+      },
+      {
+        title: "The Gap",
+        content: "The gap was in what they wanted their children to learn versus what they were actually learning through workshops. Financial education workshops are a very common way to teach children about money. However, these follow templates, which means that the knowledge that children receive, may not make sense to their financial situation. Parents were frustrated that although their children would learn about the concept of money, they wouldnt really understand the value of money."
+      },
+      {
+        title: "Design Solution",
+        content: "To work around this, I designed a platform which aims to help children learn financial skills through practical experience. The would be achieved with the help of a mock virtual economy, where children can earn and learn at their own pace. This economy is controlled and regulated by parents or school administrators, who ensure that children are able to experience all of this in a safe and controlled environment. This also ensures that parents are more involved in this learning process."
+      }
+    ],
+    year: "2025",
+    client: "UX Design Project",
+    role: "Everything",
+    links: [
+      { label: "Business Plan Document", url: "#", type: "download" },
+      { label: "Design Document", url: "#", type: "download" }
+    ],
     gallery: [
       "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&auto=format",
       "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800&auto=format",
@@ -63,6 +81,7 @@ export const projects: Project[] = [
     year: "2022",
     client: "Self-initiated",
     role: "Designer & Maker",
+    
     gallery: [
       "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format",
       "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&auto=format",
