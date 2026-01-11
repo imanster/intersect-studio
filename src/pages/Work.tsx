@@ -1,13 +1,18 @@
 import { useState, useMemo } from "react";
 import { Helmet } from "react-helmet-async";
-import { Search, X } from "lucide-react";
+import { Search, X, Filter, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import ProjectDetail, { Project } from "@/components/ProjectDetail";
 import { projects } from "@/data/projects";
 import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
+import { Checkbox } from "@/components/ui/checkbox";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -104,42 +109,71 @@ const Work = () => {
         {/* Search and Filter Section */}
         <section className="py-6 px-6 md:px-12">
           <div className="max-w-7xl mx-auto space-y-4">
-            {/* Search Bar */}
-            <div className="relative max-w-md">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-              <Input
-                type="text"
-                placeholder="Search projects, disciplines, clients..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10 pr-10 bg-secondary/50 border-border/50 focus:border-primary"
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  <X className="h-4 w-4" />
-                </button>
-              )}
-            </div>
+            {/* Search Bar and Filter */}
+            <div className="flex flex-wrap gap-3 items-center">
+              <div className="relative flex-1 max-w-md">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                <Input
+                  type="text"
+                  placeholder="Search projects, disciplines, clients..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="pl-10 pr-10 bg-secondary/50 border-border/50 focus:border-primary"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery("")}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    <X className="h-4 w-4" />
+                  </button>
+                )}
+              </div>
 
-            {/* Discipline Filters */}
-            <div className="flex flex-wrap gap-2">
-              {allDisciplines.map((discipline) => (
-                <Badge
-                  key={discipline}
-                  variant={selectedDisciplines.includes(discipline) ? "default" : "outline"}
-                  className={`cursor-pointer transition-all duration-200 ${
-                    selectedDisciplines.includes(discipline)
-                      ? "bg-primary text-primary-foreground hover:bg-primary/80"
-                      : "hover:bg-secondary hover:text-foreground"
-                  }`}
-                  onClick={() => toggleDiscipline(discipline)}
-                >
-                  {discipline}
-                </Badge>
-              ))}
+              {/* Discipline Filter Dropdown */}
+              <Popover>
+                <PopoverTrigger asChild>
+                  <button className="flex items-center gap-2 px-4 py-2 rounded-md border border-border/50 bg-secondary/50 hover:bg-secondary transition-colors text-sm">
+                    <Filter className="h-4 w-4" />
+                    <span>Disciplines</span>
+                    {selectedDisciplines.length > 0 && (
+                      <span className="bg-primary text-primary-foreground text-xs px-1.5 py-0.5 rounded-full">
+                        {selectedDisciplines.length}
+                      </span>
+                    )}
+                    <ChevronDown className="h-4 w-4" />
+                  </button>
+                </PopoverTrigger>
+                <PopoverContent className="w-64 p-3 bg-background border border-border shadow-lg z-50" align="start">
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <p className="font-medium text-sm">Filter by Discipline</p>
+                      {selectedDisciplines.length > 0 && (
+                        <button
+                          onClick={() => setSelectedDisciplines([])}
+                          className="text-xs text-primary hover:text-primary/80"
+                        >
+                          Clear all
+                        </button>
+                      )}
+                    </div>
+                    <div className="max-h-64 overflow-y-auto space-y-2">
+                      {allDisciplines.map((discipline) => (
+                        <label
+                          key={discipline}
+                          className="flex items-center gap-2 cursor-pointer hover:bg-secondary/50 p-1.5 rounded transition-colors"
+                        >
+                          <Checkbox
+                            checked={selectedDisciplines.includes(discipline)}
+                            onCheckedChange={() => toggleDiscipline(discipline)}
+                          />
+                          <span className="text-sm">{discipline}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+                </PopoverContent>
+              </Popover>
             </div>
 
             {/* Active Filters & Results Count */}
