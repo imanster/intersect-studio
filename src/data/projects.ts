@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "the-spark",
     title: "The Spark",
     disciplines: ["UI/UX Design", "Interaction Design", "Psychology"],
-    description: "",
+    description: "A psychology-informed study tool designed to help individuals with ADHD manage attention and reduce classroom distractions through controlled, low-cognitive interaction.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format",
     fullDescription: "This project was built with the objective of trying to make a meaningful impact in the daily life of ADHD patients. I built a study tool for people with ADHD and low attention spans to use in a classroom setting to help reduce distractions.",
     detailedSections: [
@@ -205,7 +205,7 @@ export const projects: Project[] = [
   },
   {
     id: "ug-research-day-interdisciplinary-design",
-    title: "Navigating Wicked Problems: The Power of Interdisciplinarity Within Design",
+    title: "Navigating Wicked Problems",
     disciplines: ["Design Research", "Design Thinking", "Interdisciplinary Studies"],
     description: "A research study presented at UG Research Day 2025 exploring how design thinking bridges disciplinary boundaries to address complex problems.",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format",
