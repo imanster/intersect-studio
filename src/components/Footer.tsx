@@ -4,6 +4,14 @@ const Footer = () => {
     { label: "Instagram", href: "https://www.instagram.com/ishaankarnani/" },
   ];
 
+  const openExternalLink = (url: string) => {
+    const newWindow = window.open();
+    if (newWindow) {
+      newWindow.opener = null;
+      newWindow.location.href = url;
+    }
+  };
+
   return (
     <footer className="py-16 px-6 md:px-12 border-t border-border">
       <div className="max-w-7xl mx-auto">
@@ -13,28 +21,24 @@ const Footer = () => {
               Let's create<br />
               <span className="text-gradient">something unexpected</span>
             </h3>
-            <a
-              href="mailto:ishaan@karnani.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg"
+            <button
+              onClick={() => openExternalLink("mailto:ishaan@karnani.in")}
+              className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg text-left"
             >
               ishaan@karnani.in
-            </a>
+            </button>
           </div>
 
           <div className="flex flex-col md:items-end justify-between">
             <div className="flex gap-6 mb-8">
               {socials.map((social) => (
-                <a
+                <button
                   key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  onClick={() => openExternalLink(social.href)}
                   className="font-display text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   {social.label}
-                </a>
+                </button>
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
