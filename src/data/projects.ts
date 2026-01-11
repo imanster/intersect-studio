@@ -72,19 +72,48 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "material-memories",
-    title: "Material Memories",
-    disciplines: ["Product", "Sustainability", "Craft"],
-    description: "Furniture collection crafted from reclaimed materials with embedded stories.",
+    id: "homing",
+    title: "Homing",
+    disciplines: ["Design Thinking", "Interaction Design"],
+    description: "Homing is an anti-addiction social media platform concept focused on enabling meaningful human connection without encouraging compulsive usage.",
     image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&auto=format",
-    fullDescription: "Each piece in the Material Memories collection tells a story. Sourced from decommissioned buildings, retired boats, and abandoned workshops, these materials carry decades of history. Working with local craftspeople, we've transformed these fragments into functional furniture that honors their past while serving new purposes. QR codes embedded in each piece link to documented histories of the original materials.",
-    year: "2022",
-    client: "Self-initiated",
-    role: "Designer & Maker",
-    
+    fullDescription: "As social media platforms increasingly prioritise engagement and retention, the line between connection and addiction has become blurred. Homing is a concept social media platform developed as part of a design thinking and process course, exploring how intentional constraints and metaphor-led design can encourage healthier, more reciprocal forms of digital connection.",
+
+    detailedSections: [
+      {
+        title: "Design Problem",
+        content: "The core problem identified was not a loss of emotional closeness between people, but a breakdown in the regularity and symmetry of communication. Existing social media platforms often frame infrequent interaction as disengagement, resulting in pressure to stay constantly active in order to maintain relationships."
+      },
+      {
+        title: "Core Insight: Circles of Closeness",
+        content: "The project was grounded in the idea of circles of closeness. Through reflection and discussion, we realised that relationships can remain emotionally close even when communication becomes infrequent. The issue lies in how platforms handle these gaps, often overwhelming users with irregular, mass updates rather than supporting slow, meaningful exchanges."
+      },
+      {
+        title: "Design Concept: The Homing Pigeon",
+        content: "Homing uses the metaphor of homing pigeons to shape its interaction model. All updates are sent to a central 'post office' rather than being pushed directly to users. Information is received only when a user chooses to send their own pigeon, reinforcing intentionality, reciprocity, and mutual awareness within relationships."
+      },
+      {
+        title: "Information Flow and Feed Logic",
+        content: "Instead of algorithmic or novelty-driven feeds, Homing follows an oldest-first model. The oldest unread updates are prioritised, ensuring that delayed communication is treated as natural rather than penalised. This design choice reduces anxiety, avoids performative posting, and encourages thoughtful engagement over habitual checking."
+      },
+      {
+        title: "Reflection",
+        content: "Homing remained a conceptual exploration, but it served as a critical investigation into slow technology and ethical interaction design. The project highlighted how reframing metaphors, information flow, and interaction triggers can fundamentally alter user behaviour and emotional response."
+      }
+    ],
+
+    year: "2025",
+    client: "Design Thinking & Process Course",
+    role: "Problem Framing, User Research, Concept Development",
+
+    links: [
+      { label: "Process & Research Deck", url: "#", type: "download" },
+      { label: "Concept Rationale Document", url: "#", type: "download" }
+    ],
+
     gallery: [
-      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&auto=format",
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&auto=format",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&auto=format",
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&auto=format"
     ],
   },
   {
