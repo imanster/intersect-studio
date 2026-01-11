@@ -159,6 +159,51 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=800&auto=format"
     ],
   },
+  {
+    id: "spotify-trapped",
+    title: "Spotify Trapped",
+    disciplines: ["Immersive Design", "Augmented Reality", "Experience Design"],
+    description: "An AR extension concept for Spotify that transforms music listening into an immersive, concert-like experience.",
+    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&auto=format",
+    fullDescription: "Spotify Trapped is an augmented reality extension concept developed as part of an immersive design course. The project explores how music streaming platforms can move beyond passive listening by creating spatial, performative experiences. The concept reimagines songs as immersive AR concerts that users can experience within their own physical environments.",
+
+    detailedSections: [
+      {
+        title: "Context and Motivation",
+        content: "Music streaming platforms have largely remained screen-based, focusing on playlists, discovery, and background listening. While concerts offer deeply emotional and immersive experiences, they are limited by geography, cost, and availability. This project explored how augmented reality could bridge this gap by bringing performance into the listener’s personal space."
+      },
+      {
+        title: "Concept Overview",
+        content: "Spotify Trapped is imagined as an extension to Spotify that allows users to experience songs as AR performances. When a user plays a track, the system generates an augmented reality concert featuring the artist performing the selected song, allowing users to experience music as a spatial, visual, and emotional event rather than purely audio content."
+      },
+      {
+        title: "Experience Design Approach",
+        content: "The experience is designed to feel intimate and controlled, rather than overwhelming. Users can place the performance within their environment, choose their viewing distance, and experience the concert from multiple perspectives. The focus was on presence and emotional immersion, treating AR as a storytelling medium rather than a visual novelty."
+      },
+      {
+        title: "Example Use Case",
+        content: "For example, if a user adds a Taylor Swift song to their playlist, Spotify Trapped generates an AR model of Taylor Swift performing that song. The performance unfolds in the user’s physical space, creating the feeling of a private concert that exists at the intersection of the digital and physical worlds."
+      },
+      {
+        title: "Reflection",
+        content: "Spotify Trapped is a conceptual prototype that investigates the future of music consumption through immersive technologies. The project highlights the potential of AR to deepen emotional engagement, reframe digital content as lived experience, and expand how users relate to artists beyond traditional screens."
+      }
+    ],
+
+    year: "2024",
+    client: "Immersive Design Course Project",
+    role: "Concept Development, Experience Design, AR Ideation",
+
+    links: [
+      { label: "Prototype", url: "#", type: "external" }
+    ],
+
+    gallery: [
+      "https://images.unsplash.com/photo-1549921296-3cce38b6a8d3?w=800&auto=format",
+      "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800&auto=format"
+    ],
+  },
+
 
   {
     id: "code-as-canvas",
