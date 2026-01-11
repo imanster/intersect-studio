@@ -15,6 +15,8 @@ const Footer = () => {
             </h3>
             <a
               href="mailto:ishaan@karnani.in"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg"
             >
               ishaan@karnani.in
@@ -27,6 +29,8 @@ const Footer = () => {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-display text-sm uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors duration-300"
                 >
                   {social.label}
