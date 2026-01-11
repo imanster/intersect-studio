@@ -203,158 +203,48 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800&auto=format"
     ],
   },
-
-
   {
-    id: "code-as-canvas",
-    title: "Code as Canvas",
-    disciplines: ["Creative Coding", "Art", "Installation"],
-    description: "Interactive digital installations responding to human presence and emotion.",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format",
-    fullDescription: "Code as Canvas blurs the line between artist and algorithm. These installations use machine learning to interpret visitors' movements, facial expressions, and even heartbeats, generating unique visual responses that evolve throughout the exhibition.",
+    id: "ug-research-day-interdisciplinary-design",
+    title: "Navigating Wicked Problems: The Power of Interdisciplinarity Within Design",
+    disciplines: ["Design Research", "Design Thinking", "Interdisciplinary Studies"],
+    description: "A research study presented at UG Research Day 2025 exploring how design thinking bridges disciplinary boundaries to address complex problems.",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&auto=format",
+    fullDescription: "This project is a collaborative research study presented at Undergraduate Research Day 2025 at FLAME University. The research investigates how design thinking functions as an interdisciplinary framework, enabling students from diverse academic backgrounds to collaboratively address complex and ‘wicked’ problems through human-centered, exploratory, and iterative processes.",
+
     detailedSections: [
       {
-        title: "The Concept",
-        content: "No two experiences are identical—each visitor becomes a collaborator in an ongoing conversation between human and machine creativity. The installation learns from collective interactions, developing its own artistic 'style' over time."
+        title: "Research Context",
+        content: "The modern world is increasingly characterised by volatility, uncertainty, complexity, and ambiguity (VUCA), giving rise to wicked problems such as sustainability challenges, social inequity, and paradoxes of digital connectivity. These problems cannot be solved through linear methods or single-disciplinary expertise, creating the need for collaborative and integrative approaches to problem-solving."
       },
       {
-        title: "Technical Stack",
-        content: "Built using Processing and p5.js for visuals, with TensorFlow for real-time emotion detection. Custom WebSocket infrastructure enables synchronized experiences across multiple display surfaces."
+        title: "Research Objective",
+        content: "The objective of this study was to demonstrate how design education and design thinking methodologies seamlessly integrate multiple disciplines to produce disruptive, innovative, and socially impactful outcomes. The study aimed to position design not merely as a discipline, but as a mode of thinking that enables collaboration across traditionally siloed fields."
+      },
+      {
+        title: "Methodology",
+        content: "The study employed a qualitative research approach based on reflections from six undergraduate students enrolled in interdisciplinary programs at FLAME University. Their experiences across multiple design-focused courses were analysed, alongside project outcomes spanning a wide range of sectors. The analysis focused on the application of design processes, diversity of problem domains, and the innovativeness of proposed solutions."
+      },
+      {
+        title: "Key Findings",
+        content: "Over three semesters, students worked on seventeen projects across thirteen sectors, generating more than 1500 ideas through structured ideation and prototyping. The findings indicate that design thinking enabled students to dissolve disciplinary boundaries, frame problems more effectively, and develop solutions that balanced desirability, feasibility, and viability while addressing complex real-world challenges."
+      },
+      {
+        title: "Conclusion and Reflection",
+        content: "The research highlights the role of design thinking as a powerful pedagogical and problem-solving framework within undergraduate education. By prioritising human-centered inquiry and interdisciplinary collaboration, design education equips students with the mindset and tools necessary to navigate wicked problems and produce meaningful, innovative outcomes across domains."
       }
     ],
-    year: "2022",
-    client: "Digital Arts Museum",
-    role: "Artist & Developer",
-    link: "https://example.com",
+
+    year: "2025",
+    client: "Undergraduate Research Day, FLAME University",
+    role: "Co-Author, Research Synthesis, Design Thinking Analysis",
+
     links: [
-      { label: "Live Installation", url: "#", type: "external" },
-      { label: "Source Code", url: "#", type: "external" },
-      { label: "Exhibition Catalog (PDF)", url: "#", type: "download" }
+      { label: "Research Abstract", url: "#", type: "download" }
     ],
+
     gallery: [
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format",
-      "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&auto=format",
-    ],
-  },
-  {
-    id: "narrative-spaces",
-    title: "Narrative Spaces",
-    disciplines: ["Spatial", "Storytelling", "XR"],
-    description: "Immersive environments that unfold stories through exploration.",
-    image: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=800&auto=format",
-    fullDescription: "Narrative Spaces reimagines storytelling as a spatial experience. Using mixed reality technologies, we created environments where stories aren't told linearly but discovered through exploration. Visitors navigate physical spaces enhanced with digital layers, uncovering narrative fragments that piece together based on their unique journey. The project challenges traditional authorship, giving each visitor agency in constructing meaning.",
-    year: "2021",
-    client: "Theater Company",
-    role: "Experience Designer",
-    gallery: [
-      "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=800&auto=format",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format",
-    ],
-  },
-  {
-    id: "fluid-identities",
-    title: "Fluid Identities",
-    disciplines: ["Branding", "Motion", "Typography"],
-    description: "Dynamic visual systems that evolve and adapt across touchpoints.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&auto=format",
-    fullDescription: "Traditional brand identities are static, but organizations are living entities. Fluid Identities developed a generative visual system that responds to real-time data—social sentiment, environmental conditions, user interactions—creating a brand that breathes and evolves. The core identity remains recognizable while its expressions shift, reflecting the dynamic nature of contemporary culture.",
-    year: "2021",
-    client: "Tech Startup",
-    role: "Brand Designer",
-    gallery: [
-      "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&auto=format",
-      "https://images.unsplash.com/photo-1561070791-36c11767b26a?w=800&auto=format",
-    ],
-  },
-  // Additional projects for the full Work page
-  {
-    id: "sonic-landscapes",
-    title: "Sonic Landscapes",
-    disciplines: ["Sound Design", "Geography", "Installation"],
-    description: "Audio installations mapping the acoustic signatures of disappearing ecosystems.",
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&auto=format",
-    fullDescription: "Sonic Landscapes is an ongoing project documenting the acoustic fingerprints of threatened ecosystems around the world. Using specialized recording equipment, we capture the unique soundscapes of forests, wetlands, and coral reefs before they change forever. These recordings are transformed into immersive installations that transport visitors to distant environments, creating emotional connections that inspire conservation action.",
-    year: "2023",
-    client: "Environmental Foundation",
-    role: "Sound Artist & Researcher",
-    gallery: [
-      "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&auto=format",
-      "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&auto=format",
-    ],
-  },
-  {
-    id: "wearable-narratives",
-    title: "Wearable Narratives",
-    disciplines: ["Fashion", "Technology", "Storytelling"],
-    description: "Garments that change based on the wearer's environment and experiences.",
-    image: "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=800&auto=format",
-    fullDescription: "Wearable Narratives explores clothing as a medium for personal storytelling. Using thermochromic inks, conductive threads, and embedded sensors, these garments respond to temperature, movement, and location—gradually revealing patterns and colors that reflect the wearer's journey. Each piece becomes a living diary, accumulating visual memories of places visited and experiences shared.",
-    year: "2022",
-    client: "Fashion Lab",
-    role: "Designer & Technologist",
-    gallery: [
-      "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&auto=format",
-      "https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&auto=format",
-    ],
-  },
-  {
-    id: "algorithmic-gardens",
-    title: "Algorithmic Gardens",
-    disciplines: ["Generative Art", "Botany", "Code"],
-    description: "Digital ecosystems that grow and evolve following natural principles.",
-    image: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&auto=format",
-    fullDescription: "Algorithmic Gardens brings together computational design and botanical research to create virtual ecosystems that follow the same rules as natural ones. Plants compete for light, pollinate, spread seeds, and adapt to their environment over generations. Visitors can introduce new species, change environmental conditions, and watch centuries of evolution unfold in minutes.",
-    year: "2021",
-    client: "Science Museum",
-    role: "Creative Technologist",
-    gallery: [
-      "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&auto=format",
-      "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=800&auto=format",
-    ],
-  },
-  {
-    id: "memory-architecture",
-    title: "Memory Architecture",
-    disciplines: ["Architecture", "Psychology", "VR"],
-    description: "Virtual spaces designed to enhance memory formation and recall.",
-    image: "https://images.unsplash.com/photo-1545552983-eb6aa09a2d1e?w=800&auto=format",
-    fullDescription: "Memory Architecture applies principles of spatial memory to virtual environment design. Working with cognitive psychologists, we developed a series of VR spaces specifically designed to help users encode and retrieve information more effectively. The project has applications in education, therapy for memory disorders, and training programs requiring complex information retention.",
-    year: "2020",
-    client: "University Research Center",
-    role: "VR Designer & Researcher",
-    gallery: [
-      "https://images.unsplash.com/photo-1558618047-f4e79e5093aa?w=800&auto=format",
-      "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=800&auto=format",
-    ],
-  },
-  {
-    id: "tactile-typography",
-    title: "Tactile Typography",
-    disciplines: ["Typography", "Accessibility", "3D Printing"],
-    description: "A typeface system designed for both visual and tactile reading experiences.",
-    image: "https://images.unsplash.com/photo-1618367588411-d9a90fefa881?w=800&auto=format",
-    fullDescription: "Tactile Typography bridges the gap between visual and tactile reading experiences. This typeface system translates letterforms into three-dimensional textures that can be read by touch while maintaining visual beauty. The project includes a set of 3D-printable fonts and guidelines for creating accessible signage, books, and wayfinding systems.",
-    year: "2020",
-    client: "Accessibility Initiative",
-    role: "Type Designer",
-    gallery: [
-      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format",
-      "https://images.unsplash.com/photo-1524578271613-d550eacf6090?w=800&auto=format",
-    ],
-  },
-  {
-    id: "collaborative-canvas",
-    title: "Collaborative Canvas",
-    disciplines: ["Web Design", "Social", "Real-time"],
-    description: "A platform for synchronous creative collaboration across distances.",
-    image: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&auto=format",
-    fullDescription: "Collaborative Canvas reimagines remote creative work. This platform enables teams to sketch, prototype, and iterate together in real-time, with tools designed specifically for the messy, non-linear nature of creative collaboration. Features include version branching, asynchronous annotation, and AI-assisted organization of scattered ideas into coherent directions.",
-    year: "2021",
-    client: "Creative Agency",
-    role: "Product Designer",
-    gallery: [
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format",
-      "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=800&auto=format",
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format"
     ],
   },
 ];
