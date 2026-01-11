@@ -74,7 +74,7 @@ export const projects: Project[] = [
   {
     id: "homing",
     title: "Homing",
-    disciplines: ["Design Thinking", "Interaction Design"],
+    disciplines: ["Design Thinking", "Interaction Design", "Design Process", "Computer Science"],
     description: "Homing is an anti-addiction social media platform concept focused on enabling meaningful human connection without encouraging compulsive usage.",
     image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&auto=format",
     fullDescription: "As social media platforms increasingly prioritise engagement and retention, the line between connection and addiction has become blurred. Homing is a concept social media platform developed as part of a design thinking and process course, exploring how intentional constraints and metaphor-led design can encourage healthier, more reciprocal forms of digital connection.",
@@ -102,13 +102,12 @@ export const projects: Project[] = [
       }
     ],
 
-    year: "2025",
+    year: "2024",
     client: "Design Thinking & Process Course",
     role: "Problem Framing, User Research, Concept Development",
 
     links: [
-      { label: "Process & Research Deck", url: "#", type: "download" },
-      { label: "Concept Rationale Document", url: "#", type: "download" }
+      { label: "Prototype", url: "#", type: "download" },
     ],
 
     gallery: [
@@ -116,6 +115,51 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&auto=format"
     ],
   },
+  {
+    id: "ai-course-recommendation",
+    title: "AI-Driven Course Registration & Elective Recommendation",
+    disciplines: ["AI Strategy", "Business Process Design", "Education"],
+    description: "An AI-enhanced system concept to transform course registration from a rule-based process into a proactive, personalised advisory experience.",
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format",
+    fullDescription: "This project was developed as part of the AI in Business course and focuses on reimagining the course registration and elective recommendation process within higher education. The project explores how AI can shift academic planning from a bureaucratic, rule-enforcing system to a proactive, personalised advisory experience that improves student outcomes while reducing administrative strain.",
+
+    detailedSections: [
+      {
+        title: "Industry Context",
+        content: "The chosen domain for this project was Higher Education Administration, a space characterised by large student populations, complex degree requirements, and high administrative overhead. Traditional systems struggle to scale personalised guidance, relying heavily on manual advising and legacy platforms that increase friction for both students and staff."
+      },
+      {
+        title: "Problem Definition",
+        content: "The existing course registration process primarily acts as a rule validator, confirming eligibility and prerequisites without offering goal-oriented guidance. Students are required to manually plan multi-semester pathways, resolve scheduling conflicts, and make high-impact academic decisions during high-stress periods, often resulting in sub-optimal course choices and delayed degree completion."
+      },
+      {
+        title: "AI-Led Design Opportunity",
+        content: "The core opportunity identified was to reposition the system as an intelligent advisory partner. By leveraging AI-driven personalisation, predictive analytics, and conversational interfaces, the process could shift from reactive error correction to proactive planning, helping students make informed decisions aligned with their academic goals and career aspirations."
+      },
+      {
+        title: "Proposed AI-Enhanced Process",
+        content: "The proposed solution integrates a Conversational AI and Course Recommendation System (CRS) that supports students throughout academic planning. Using natural language input, the system interprets goals, analyses historical success pathways, predicts course performance, resolves scheduling conflicts, and dynamically optimises degree paths while escalating only high-friction exceptions to human advisors."
+      },
+      {
+        title: "Business Impact",
+        content: "From a business perspective, the AI-enhanced process reduces advisor workload, improves student satisfaction and retention, and enables proactive resource planning. Predictive demand forecasting allows institutions to allocate faculty and classroom capacity more effectively, while continuous learning loops ensure the system improves over time."
+      }
+    ],
+
+    year: "2025",
+    client: "AI in Business Course",
+    role: "Everything",
+
+    links: [
+      { label: "Final Report", url: "#", type: "download" }
+    ],
+
+    gallery: [
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format",
+      "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=800&auto=format"
+    ],
+  },
+
   {
     id: "code-as-canvas",
     title: "Code as Canvas",
