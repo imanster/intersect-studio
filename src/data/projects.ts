@@ -247,6 +247,64 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format"
     ],
   },
+  {
+    id: "vibrant",
+    title: "Vibrant",
+    disciplines: ["Game Design", "Level Design", "Systems Design"],
+    description: "A skill-based 2D platformer focused on precision, clarity, and accessibility for both gamers and non-gamers.",
+    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format",
+    fullDescription: "Vibrant is a 2D platformer developed as an independent game project using Gamemaker Studio 2. Built over a period of 2.5 months in 2022, the project explores how minimal mechanics, strong visual feedback, and thoughtful level design can create a challenging yet accessible experience that rewards skill while remaining approachable to non-gamers.",
+
+    detailedSections: [
+      {
+        title: "Project Overview",
+        content: "Vibrant was conceived as a tightly scoped project with the goal of shipping a complete, playable game. The intent was to avoid over-scoping while building a polished, skill-based platformer that relies on mastery rather than complexity. A key objective was to ensure that the game could be enjoyed by players with little to no gaming experience, without diluting challenge for experienced players."
+      },
+      {
+        title: "Core Mechanics",
+        content: "The game uses a deliberately minimal control scheme consisting of horizontal movement and jumping. Players have access to two jumps at all times, allowing for mid-air correction and flexible movement. These jumps reset when the player lands on a platform, creating a system that encourages experimentation while maintaining precision."
+      },
+      {
+        title: "Gameplay Ingredients",
+        content: "Across 25 short levels, the game introduces mechanics—referred to as ingredients—in a controlled sequence. These include hazards such as lava and dynamic blobs, traversal elements like elevators and portals, and physics-altering components such as sticky walls, gravity pits, and jump refills. Each ingredient is first introduced in isolation before being combined with others to increase complexity."
+      },
+      {
+        title: "Art Style and Visual Language",
+        content: "The visual style is built using basic geometric shapes and solid colours, prioritising clarity and readability during fast-paced gameplay. Colour is used as an expressive tool, with more complex and difficult levels incorporating a wider and more intense colour palette. Menu backgrounds feature abstract compositions that reinforce the game’s vibrant identity."
+      },
+      {
+        title: "Level Design Philosophy",
+        content: "Levels were designed to be short, challenging, and replayable. A core principle was teaching through failure—when a player fails a jump or sequence, the cause is immediately understandable, encouraging the player to adjust their approach. This helps maintain motivation despite frequent deaths."
+      },
+      {
+        title: "Pacing and Feedback",
+        content: "To maintain momentum, levels were designed to take no more than 20 seconds to complete on a flawless run. Fast restarts, combined with visually striking and short-lived death particles and sound effects, were used to counter frustration and make failure feel lightweight rather than punitive."
+      },
+      {
+        title: "Speedrun-Oriented Design",
+        content: "Vibrant was designed to be fully speedrun-friendly. Several levels include optional alternate routes that are significantly more difficult but allow for faster completion times. These routes add depth and replayability for advanced players while leaving the core experience intact for casual players."
+      },
+      {
+        title: "Teaching the Player",
+        content: "The game employs a mix of explicit tutorials through on-screen text and implicit ‘hidden tutorials’ embedded within level design. Early levels teach mechanics such as jumping and double-jumping through obstacle placement, allowing players to learn by doing rather than relying solely on instructions."
+      }
+    ],
+
+    year: "2022",
+    client: "Independent Game Project",
+    role: "Game Design, Level Design, Art, Programming",
+
+    links: [
+      { label: "Playable Build", url: "#", type: "external" },
+      { label: "Design Breakdown", url: "#", type: "external" }
+    ],
+
+    gallery: [
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format",
+      "https://images.unsplash.com/photo-1509191436522-d296cf87d96c?w=800&auto=format"
+    ],
+  },
+
 ];
 
 // Highlighted projects for the homepage

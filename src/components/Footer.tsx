@@ -1,9 +1,7 @@
 const Footer = () => {
   const socials = [
-    { label: "LinkedIn", href: "#" },
-    { label: "Behance", href: "#" },
-    { label: "Instagram", href: "#" },
-    { label: "Twitter", href: "#" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/ishaan-karnani/" },
+    { label: "Instagram", href: "https://www.instagram.com/ishaankarnani/" },
   ];
 
   return (
@@ -16,10 +14,10 @@ const Footer = () => {
               <span className="text-gradient">something unexpected</span>
             </h3>
             <a
-              href="mailto:hello@portfolio.com"
+              href="mailto:ishaan@karnani.in"
               className="text-muted-foreground hover:text-primary transition-colors duration-300 text-lg"
             >
-              hello@portfolio.com
+              ishaan@karnani.in
             </a>
           </div>
 
