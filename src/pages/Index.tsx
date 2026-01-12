@@ -129,26 +129,26 @@ const Index = () => {
       </section>
 
       {/* Statement Section */}
-      <section className="py-24 px-6 md:px-12 bg-gradient-to-b from-background to-card/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="min-h-[60vh] lg:min-h-[70vh] flex items-center py-16 md:py-24 lg:py-32 px-6 md:px-12 bg-gradient-to-b from-background to-card/30">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4">
                 Inter-disciplinary Explorer
               </p>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.1] mb-6">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-[1.1] mb-6">
                 Designer, maker,
                 <br />
                 <span className="text-gradient">building from ideas</span>
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg md:text-xl text-muted-foreground">
                 I work across design and technology, using projects to explore systems,
                 test concepts, and understand how ideas translate into real-world use.
               </p>
             </div>
 
             {/* Flowing Tags */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 lg:gap-4">
               {[
                 "Game Design",
                 "Computer Science",
@@ -161,7 +161,7 @@ const Index = () => {
               ].map((field, index) => (
                 <span
                   key={field}
-                  className="px-4 py-2 rounded-full bg-card border border-border text-sm font-medium text-foreground hover:border-primary hover:text-primary transition-all duration-300 cursor-default"
+                  className="px-4 py-2 lg:px-5 lg:py-3 rounded-full bg-card border border-border text-sm lg:text-base font-medium text-foreground hover:border-primary hover:text-primary transition-all duration-300 cursor-default"
                   style={{ animationDelay: `${index * 0.05}s` }}
                 >
                   {field}
@@ -173,20 +173,20 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-24 px-6 md:px-12 bg-card/50">
-        <div className="max-w-6xl mx-auto">
+      <section className="min-h-[70vh] lg:min-h-[80vh] flex items-center py-16 md:py-24 lg:py-32 px-6 md:px-12 bg-card/50">
+        <div className="max-w-6xl mx-auto w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-2">
                 About Me
               </p>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 Working at the edges
               </h2>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-muted-foreground text-base md:text-lg">
                 <p>
-                  I’m currently a student exploring how ideas move from early concepts to workable systems.
-                  I’m drawn to problems that aren’t fully defined and enjoy figuring out structure as part of the process.
+                  I'm currently a student exploring how ideas move from early concepts to workable systems.
+                  I'm drawn to problems that aren't fully defined and enjoy figuring out structure as part of the process.
                 </p>
                 <p>
                   My work spans multiple disciplines.
@@ -200,23 +200,23 @@ const Index = () => {
             </div>
 
             {/* Approach Cards */}
-            <div className="space-y-4">
+            <div className="space-y-4 lg:space-y-6">
               {values.map((value, index) => (
                 <div
                   key={value.title}
-                  className="p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors duration-500 group"
+                  className="p-6 lg:p-8 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors duration-500 group"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors duration-500">
-                      <span className="font-display text-sm font-bold text-primary">
+                    <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors duration-500">
+                      <span className="font-display text-sm lg:text-base font-bold text-primary">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                     </div>
                     <div>
-                      <h3 className="font-display text-lg font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
+                      <h3 className="font-display text-lg lg:text-xl font-semibold mb-2 group-hover:text-primary transition-colors duration-300">
                         {value.title}
                       </h3>
-                      <p className="text-muted-foreground text-sm">{value.description}</p>
+                      <p className="text-muted-foreground text-sm md:text-base">{value.description}</p>
                     </div>
                   </div>
                 </div>
@@ -230,18 +230,18 @@ const Index = () => {
       <ProjectsGrid />
 
       {/* Fun Facts Section */}
-      <section className="py-24 px-6 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <div className="py-16 px-8 md:px-16 rounded-2xl bg-gradient-to-br from-card to-muted/20 border border-border">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section className="min-h-[60vh] lg:min-h-[70vh] flex items-center py-16 md:py-24 lg:py-32 px-6 md:px-12">
+        <div className="max-w-6xl mx-auto w-full">
+          <div className="py-12 md:py-16 lg:py-20 px-8 md:px-12 lg:px-16 rounded-2xl bg-gradient-to-br from-card to-muted/20 border border-border">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div>
                 <p className="font-display text-sm uppercase tracking-[0.3em] text-secondary mb-2">
                   Beyond Work
                 </p>
-                <h2 className="font-display text-3xl font-bold mb-6">
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:mb-8">
                   A few things about me
                 </h2>
-                <ul className="space-y-4">
+                <ul className="space-y-4 lg:space-y-5">
                   {[
                     "Obsessed with building systems",
                     "Collect decks of playing cards",
@@ -251,15 +251,15 @@ const Index = () => {
                   ].map((fact, index) => (
                     <li
                       key={index}
-                      className="flex items-start gap-3 text-muted-foreground"
+                      className="flex items-start gap-3 text-muted-foreground text-base md:text-lg"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 flex-shrink-0" />
                       {fact}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="grid grid-cols-2 gap-4 items-center">
+              <div className="grid grid-cols-2 gap-4 lg:gap-6 items-center">
                 <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                   <img
                     src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=400&auto=format"
