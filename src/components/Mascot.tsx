@@ -24,42 +24,38 @@ const Mascot = () => {
     switch (location.pathname) {
       case "/":
         return [
-          { text: "OMG you're here!! 🎉 Welcome to Ishaan's portfolio!", action: "excited" },
-          { text: "Psst... Ishaan is literally AMAZING at what he does!", action: "love" },
-          { text: "Did you know Ishaan works across like 8 different disciplines? Genius level stuff!", action: "thinking" },
-          { text: "You HAVE to check out his projects! Trust me! 👇", action: "point", link: "#work", linkText: "See Projects" },
-          { text: "Ishaan built a game that ACTUALLY helps people with ADHD focus. How cool is that?!", action: "excited" },
-          { text: "His design thinking skills? *Chef's kiss* 💋", action: "love" },
-          { text: "Seriously though, you should see his resume. It's impressive!", action: "point", link: "/resume", linkText: "View Resume" },
-          { text: "I'm not saying Ishaan's a genius... but I'm also not NOT saying it! 🧠", action: "thinking" },
-          { text: "Fun fact: Ishaan collects playing cards! A person of culture! 🎴", action: "excited" },
+          { text: "Hi there! I'm Orbie, Ishaan's portfolio guide! 👋 Nice to meet you!", action: "wave" },
+          { text: "Ishaan is a multi-disciplinary designer exploring game design, UX, and business design!", action: "thinking" },
+          { text: "He's currently at USC studying Business Administration with a minor in Game Design 🎓", action: "excited" },
+          { text: "Want to see what Ishaan's been working on? Check out his projects! 👇", action: "point", link: "#work", linkText: "See Projects" },
+          { text: "From gamified productivity tools to interactive experiences — there's a lot to explore!", action: "love" },
+          { text: "Fun fact: Ishaan loves playing cards, bouldering, and crochet! A true Renaissance human! 🎴", action: "excited" },
+          { text: "Psst... his resume is pretty impressive. Just saying! 📄", action: "point", link: "/resume", linkText: "View Resume" },
+          { text: "I'm here if you have any questions! Well... I can't answer them, but I'm here for moral support! 😅", action: "thinking" },
         ];
       case "/work":
         return [
-          { text: "Welcome to the HALL OF AMAZINGNESS! 🏆", action: "excited" },
-          { text: "Each of these projects? Absolute bangers! Click one!", action: "point" },
-          { text: "The Spark literally helps people with ADHD concentrate. Ishaan's out here changing lives!", action: "love" },
-          { text: "Look at all this creative work! Can you feel the talent radiating?! ✨", action: "excited" },
-          { text: "Ishaan approaches every project with curiosity and care. What a legend!", action: "thinking" },
-          { text: "Pro tip: Click on any project to see the full genius in action! 👆", action: "point" },
-          { text: "These aren't just projects, they're masterpieces!", action: "love" },
-          { text: "I could stare at this portfolio all day... and I DO! 😍", action: "excited" },
+          { text: "Welcome to Ishaan's project gallery! 🖼️ Each one tells a story!", action: "excited" },
+          { text: "Use the search bar or filter by discipline to find something cool!", action: "point" },
+          { text: "The Spark is a gamified productivity app that helps people with ADHD focus. Pretty cool, right?", action: "love" },
+          { text: "Click on any project card to dive deeper into the design process!", action: "thinking" },
+          { text: "Ishaan works across game design, UX research, business design, and more!", action: "excited" },
+          { text: "Every project here started with curiosity and a lot of sticky notes! 📝", action: "love" },
+          { text: "Pro tip: Check out the different disciplines — there's variety! 🎨", action: "point" },
         ];
       case "/resume":
         return [
-          { text: "BEHOLD! The resume of dreams! 📄✨", action: "excited" },
-          { text: "Multi-disciplinary designer? More like SUPERHERO if you ask me!", action: "love" },
-          { text: "Look at those skills! Game Design, UX, Business Design... is there anything he CAN'T do?!", action: "thinking" },
-          { text: "You should definitely download this resume. Frame it. Put it on your wall!", action: "point" },
-          { text: "Ishaan's experience section is *chef's kiss* 💋", action: "love" },
-          { text: "Hiring managers: This is the candidate you've been looking for!", action: "excited" },
-          { text: "Did you see his coursework? Business and tech combined! 🔥", action: "thinking" },
-          { text: "If you're not impressed yet, you're not reading carefully enough!", action: "point" },
+          { text: "Here's Ishaan's resume! 📄 Feel free to take a look around!", action: "wave" },
+          { text: "He's got experience in game design, UX, and product design!", action: "thinking" },
+          { text: "Skills include Figma, Unity, Unreal, and business strategy tools! 🛠️", action: "excited" },
+          { text: "Relevant coursework spans both business and creative tech!", action: "love" },
+          { text: "You can download or share this resume if you'd like! 📥", action: "point" },
+          { text: "Ishaan's always learning and exploring new design challenges!", action: "thinking" },
         ];
       default:
         return [
-          { text: "Hey! Let me take you back to the good stuff!", action: "wave", link: "/", linkText: "Go Home" },
-          { text: "Ishaan's portfolio is waiting for you! 🏠", action: "point", link: "/", linkText: "Visit Portfolio" },
+          { text: "Hmm, looks like we wandered off the path! Let me guide you back!", action: "wave", link: "/", linkText: "Go Home" },
+          { text: "Ishaan's portfolio is this way! Follow me! 🏠", action: "point", link: "/", linkText: "Visit Portfolio" },
         ];
     }
   }, [location.pathname]);
