@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import Footer from "@/components/Footer";
+import HiddenOrbie from "@/components/HiddenOrbie";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -113,6 +114,13 @@ const Index = () => {
                 
                 {/* Decorative corner accent */}
                 <div className="absolute -bottom-3 -right-3 w-24 h-24 border-2 border-primary rounded-xl" />
+                
+                {/* Hidden Orbie #1 - Near the portrait */}
+                <HiddenOrbie 
+                  id="orbie-hero" 
+                  className="absolute -bottom-6 left-8"
+                  hint="Peeking from the corner! 👀"
+                />
               </div>
             </div>
           </div>
@@ -167,6 +175,13 @@ const Index = () => {
                   {field}
                 </span>
               ))}
+              
+              {/* Hidden Orbie #2 - Among the tags */}
+              <HiddenOrbie 
+                id="orbie-tags" 
+                className="self-center"
+                hint="Hiding with the skills! 🏷️"
+              />
             </div>
           </div>
         </div>
@@ -267,11 +282,18 @@ const Index = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="aspect-square rounded-lg overflow-hidden bg-muted">
+                <div className="aspect-square rounded-lg overflow-hidden bg-muted relative">
                   <img
                     src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400&auto=format"
                     alt="Books"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                  
+                  {/* Hidden Orbie #3 - On the book image */}
+                  <HiddenOrbie 
+                    id="orbie-books" 
+                    className="absolute bottom-2 right-2"
+                    hint="Found me in the library! 📚"
                   />
                 </div>
               </div>
