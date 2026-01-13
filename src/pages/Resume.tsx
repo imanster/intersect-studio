@@ -167,8 +167,8 @@ const Resume = () => {
               </h1>
             </div>
             <a 
-              href="/resume.pdf" 
-              download="Ishaan_Karnani_Resume.pdf"
+              href="/IshaanKarnaniResume.pdf" 
+              download="IshaanKarnaniResume.pdf"
               className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full font-display text-sm uppercase tracking-wider hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300 animate-fade-in" 
               style={{ animationDelay: "0.2s" }}
             >
