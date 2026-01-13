@@ -166,10 +166,15 @@ const Resume = () => {
                 <span className="text-gradient">Experience</span>
               </h1>
             </div>
-            <button className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full font-display text-sm uppercase tracking-wider hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <a 
+              href="/resume.pdf" 
+              download="Ishaan_Karnani_Resume.pdf"
+              className="group flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full font-display text-sm uppercase tracking-wider hover:shadow-[0_0_40px_hsl(var(--primary)/0.4)] transition-all duration-300 animate-fade-in" 
+              style={{ animationDelay: "0.2s" }}
+            >
               <Download className="w-4 h-4 group-hover:-translate-y-0.5 transition-transform" />
               Download PDF
-            </button>
+            </a>
           </div>
         </div>
       </section>
