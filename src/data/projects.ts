@@ -30,8 +30,8 @@ export const projects: Project[] = [
     client: "Interaction Design Course",
     role: "Everything",
     links: [
-      { label: "Download", url: "#", type: "download" },
-      { label: "Design Logs", url: "#", type: "download" }
+      { label: "Download", url: "https://drive.google.com/file/d/1Ayro7hRlToJmzHI5qXypww8d_Myqbqqq/view?usp=sharing", type: "external" },
+      { label: "Design Logs", url: "/files/TheSparkReport", type: "download" }
     ],
     gallery: [
       "https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=800&auto=format",
