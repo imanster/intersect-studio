@@ -22,31 +22,31 @@ const Secret = () => {
     {
       icon: Gamepad2,
       title: "Game I'm Obsessed With",
-      content: "Currently deep into Balatro. The poker roguelike has consumed way too many hours of my life, and I regret nothing.",
+      content: "Currently deep into The Binding of Isaac. The  roguelike has consumed way too many hours of my life, and I regret nothing.",
     },
     {
       icon: Music,
-      title: "My Coding Playlist",
-      content: "Lo-fi beats + synthwave = perfect flow state. Sometimes I pretend I'm in a cyberpunk movie while debugging.",
+      title: "My Music Taste",
+      content: "My top song in my 2025 Spotify wrapped was Homesick by MICO, which i played a total of 122 times last year.",
     },
     {
       icon: Coffee,
       title: "Fuel of Choice",
-      content: "Cold brew with oat milk. I've perfected the ratio after countless experiments. It's basically science at this point.",
+      content: "Insanely fascinated with Espresso Redbull. Tastes horrible, but does the job better than anything else.",
     },
     {
       icon: Palette,
       title: "Design Inspiration",
-      content: "I spend way too much time on Dribbble and Awwwards. Also, video game UI design is criminally underrated as an art form.",
+      content: "My main motto is that if someone else can do it, let them. I'd rather do something that nobody else can.",
     },
   ];
 
   const funFacts = [
-    "I once designed a card game in a dream and woke up to write it down",
-    "My desk has more fidget toys than a therapy office",
-    "I name all my projects after space things (this portfolio was 'Nebula')",
-    "I've watched every GDC talk on game design... twice",
-    "My screen time report is classified information",
+    "I once stopped by shower halfway to write down the rules for an interhouse event in my university",
+    "I used to keep poker chips on my deck to fidget with",
+    "I have seen almost 120 hours worth of anime",
+    "I once performed in theatre, dance and fashion with a hairline fracture (i ended up in a wheelchair for a month after)",
+    "My favourite poem is the Cold Within",
   ];
 
   return (

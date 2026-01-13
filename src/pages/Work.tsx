@@ -84,7 +84,7 @@ const Work = () => {
     <>
       <Helmet>
         <title>Work | Portfolio</title>
-        <meta name="description" content="Explore my complete collection of inter-disciplinary projects spanning UX design, creative coding, spatial design, and more." />
+        <meta name="description" content="Explore my complete collection of inter-disciplinary projects spanning UX design, education, game design, and more." />
       </Helmet>
 
       <div className="min-h-screen bg-background">
@@ -101,7 +101,7 @@ const Work = () => {
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl animate-slide-up" style={{ animationDelay: "0.1s" }}>
               A comprehensive collection of projects spanning multiple disciplines, 
-              from UX design and creative coding to spatial installations and beyond.
+              from UX design and game design to education and beyond.
             </p>
           </div>
         </section>
