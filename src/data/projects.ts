@@ -194,7 +194,7 @@ export const projects: Project[] = [
     role: "Concept Development, Experience Design, AR Ideation",
 
     links: [
-      { label: "Prototype", url: "#", type: "external" }
+      { label: "Prototype", url: "https://drive.google.com/file/d/1ltCoMAeDbD7e8LS8WZQbRnAluMy45Y9J/view?usp=sharing", type: "external" }
     ],
 
     gallery: [
@@ -238,7 +238,7 @@ export const projects: Project[] = [
     role: "Co-Author, Research Synthesis, Design Thinking Analysis",
 
     links: [
-      { label: "Research Abstract", url: "#", type: "download" }
+      { label: "Research Abstract", url: "/files/WickedProblemsAbstract", type: "download" }
     ],
 
     gallery: [
