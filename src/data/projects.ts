@@ -151,7 +151,7 @@ export const projects: Project[] = [
     role: "Everything",
 
     links: [
-      { label: "Final Report", url: "#", type: "download" }
+      { label: "Final Report", url: "/files/CourseRecommendationSystemReport.pdf", type: "download" }
     ],
 
     gallery: [
