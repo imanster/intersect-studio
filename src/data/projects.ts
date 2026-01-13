@@ -106,7 +106,7 @@ export const projects: Project[] = [
     role: "Problem Framing, User Research, Concept Development",
 
     links: [
-      { label: "Prototype", url: "#", type: "download" },
+      { label: "Prototype", url: "https://drive.google.com/file/d/1IAZ7fLE9xyVtYgwj2e1hKbOQNdhGlf8Q/view?usp=sharing", type: "external" },
     ],
 
     gallery: [
@@ -238,7 +238,7 @@ export const projects: Project[] = [
     role: "Co-Author, Research Synthesis, Design Thinking Analysis",
 
     links: [
-      { label: "Research Abstract", url: "/files/WickedProblemsAbstract", type: "download" }
+      { label: "Research Abstract", url: "/files/WickedProblemsAbstract.pdf", type: "download" }
     ],
 
     gallery: [
