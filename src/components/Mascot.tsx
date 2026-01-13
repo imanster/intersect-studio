@@ -25,13 +25,13 @@ const Mascot = () => {
       case "/":
         return [
           { text: "Hi there! I'm Orbie, Ishaan's portfolio guide! 👋 Nice to meet you!", action: "wave" },
-          { text: "Ishaan is a multi-disciplinary designer exploring game design, UX, and business design!", action: "thinking" },
-          { text: "He's currently at USC studying Business Administration with a minor in Game Design 🎓", action: "excited" },
+          { text: "Psst... wanna play a game? 🎮 There are hidden Orbies scattered across this site! Can you find them all?", action: "excited" },
+          { text: "Hint: We love hiding in unexpected places... keep your eyes peeled! 👀", action: "thinking" },
           { text: "Want to see what Ishaan's been working on? Check out his projects! 👇", action: "point", link: "#work", linkText: "See Projects" },
-          { text: "From gamified productivity tools to interactive experiences — there's a lot to explore!", action: "love" },
+          { text: "Each hidden Orbie you find gets added to your collection. How many can you spot? ✨", action: "love" },
           { text: "Fun fact: Ishaan loves playing cards, bouldering, and crochet! A true Renaissance human! 🎴", action: "excited" },
           { text: "Psst... his resume is pretty impressive. Just saying! 📄", action: "point", link: "/resume", linkText: "View Resume" },
-          { text: "I'm here if you have any questions! Well... I can't answer them, but I'm here for moral support! 😅", action: "thinking" },
+          { text: "Good luck on your Orbie hunt! We're sneaky little things! 😏", action: "wave" },
         ];
       case "/work":
         return [
