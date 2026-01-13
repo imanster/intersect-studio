@@ -118,7 +118,7 @@ const Index = () => {
                 {/* Hidden Orbie #1 - Near the portrait */}
                 <HiddenOrbie 
                   id="orbie-hero" 
-                  className="absolute -bottom-6 left-8"
+                  className="absolute top-4 -left-4 z-20"
                   hint="Peeking from the corner! 👀"
                 />
               </div>
@@ -176,12 +176,14 @@ const Index = () => {
                 </span>
               ))}
               
-              {/* Hidden Orbie #2 - Among the tags */}
-              <HiddenOrbie 
-                id="orbie-tags" 
-                className="self-center"
-                hint="Hiding with the skills! 🏷️"
-              />
+              {/* Hidden Orbie #2 - Styled as a tag */}
+              <div className="px-4 py-2 lg:px-5 lg:py-3 rounded-full bg-card border border-border hover:border-primary transition-all duration-300">
+                <HiddenOrbie 
+                  id="orbie-tags" 
+                  className=""
+                  hint="Hiding with the skills! 🏷️"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -274,7 +276,7 @@ const Index = () => {
                   ))}
                 </ul>
               </div>
-              <div className="grid grid-cols-2 gap-4 lg:gap-6 items-center">
+              <div className="grid grid-cols-2 gap-4 lg:gap-6 items-center relative">
                 <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                   <img
                     src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=400&auto=format"
@@ -282,20 +284,19 @@ const Index = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                <div className="aspect-square rounded-lg overflow-hidden bg-muted relative">
+                <div className="aspect-square rounded-lg overflow-hidden bg-muted">
                   <img
                     src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400&auto=format"
                     alt="Books"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
-                  
-                  {/* Hidden Orbie #3 - On the book image */}
-                  <HiddenOrbie 
-                    id="orbie-books" 
-                    className="absolute bottom-2 right-2"
-                    hint="Found me in the library! 📚"
-                  />
                 </div>
+                {/* Hidden Orbie #3 - Near the facts list */}
+                <HiddenOrbie 
+                  id="orbie-books" 
+                  className="absolute -bottom-2 -right-2 z-20"
+                  hint="Found me in the library! 📚"
+                />
               </div>
             </div>
           </div>
