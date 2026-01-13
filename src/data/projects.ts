@@ -289,13 +289,13 @@ export const projects: Project[] = [
       }
     ],
 
-    year: "2022",
+    year: "2021",
     client: "Independent Game Project",
     role: "Game Design, Level Design, Art, Programming",
 
     links: [
-      { label: "Playable Build", url: "#", type: "external" },
-      { label: "Design Breakdown", url: "#", type: "external" }
+      { label: "Playable Build", url: "https://imanster.itch.io/vibrant", type: "external" },
+      { label: "Design Breakdown", url: "/files/VibrantPostmortemReport.pdf", type: "download" }
     ],
 
     gallery: [
