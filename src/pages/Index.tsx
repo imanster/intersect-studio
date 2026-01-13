@@ -104,7 +104,7 @@ const Index = () => {
                 
                 <div className="relative aspect-[3/4] max-w-sm mx-auto lg:max-w-none rounded-2xl overflow-hidden border border-border/50">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format"
+                    src="/public/images/portfolioportrait.jpg"
                     alt="Portrait"
                     className="w-full h-full object-cover"
                   />
