@@ -198,7 +198,7 @@ export const projects: Project[] = [
     ],
 
     gallery: [
-      "https://images.unsplash.com/photo-1549921296-3cce38b6a8d3?w=800&auto=format",
+      "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&auto=format",
       "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format"
     ],
   },
