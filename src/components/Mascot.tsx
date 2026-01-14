@@ -29,7 +29,7 @@ const Mascot = () => {
           { text: "Hint: We love hiding in unexpected places... keep your eyes peeled! 👀", action: "thinking" },
           { text: "Want to see what Ishaan's been working on? Check out his projects! 👇", action: "point", link: "#work", linkText: "See Projects" },
           { text: "Each hidden Orbie you find gets added to your collection. How many can you spot? ✨", action: "love" },
-          { text: "Fun fact: Ishaan loves playing cards, bouldering, and crochet! A true Renaissance human! 🎴", action: "excited" },
+          { text: "Fun fact: Ishaan loves playing cards, tattoos, and video games! A truly cultured human! 🎴", action: "excited" },
           { text: "Psst... his resume is pretty impressive. Just saying! 📄", action: "point", link: "/resume", linkText: "View Resume" },
           { text: "Good luck on your Orbie hunt! We're sneaky little things! 😏", action: "wave" },
         ];
