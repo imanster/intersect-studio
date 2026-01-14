@@ -45,7 +45,7 @@ const Secret = () => {
     "I once stopped by shower halfway to write down the rules for an interhouse event in my university",
     "I used to keep poker chips on my deck to fidget with",
     "I have seen almost 120 hours worth of anime",
-    "I once performed in theatre, dance and fashion with a hairline fracture (i ended up in a wheelchair for a month after)",
+    "I once donated my hair after growing it to around 12 inches",
     "My favourite poem is the Cold Within",
   ];
 

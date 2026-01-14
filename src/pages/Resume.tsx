@@ -138,7 +138,7 @@ const Resume = () => {
 
   const skills = [
     { category: "Design", items: ["UX/UI Design", "Interaction Design", "Service Design", "Product Design", "Business Design", "Immersive Design"] },
-    { category: "Tools", items: ["Figma", "Blender", "DaVinci Resolve", "Canva", "Unity", "Prompt Engineering"] },
+    { category: "Tools", items: ["Figma", "Blender", "DaVinci Resolve", "Canva", "Unity", "Prompt Engineering", "Gamemaker Studio 2"] },
     { category: "Code", items: ["HTML/CSS", "Python", "C++"] },
     { category: "Methods", items: ["Research", "Prototyping", "Systems Thinking"] },
   ];

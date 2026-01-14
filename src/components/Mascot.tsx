@@ -25,11 +25,21 @@ const Mascot = () => {
       case "/":
         return [
           { text: "Hi there! I'm Orbie, Ishaan's portfolio guide! 👋 Nice to meet you!", action: "wave" },
+<<<<<<< HEAD
+          { text: "Ishaan is a multi-disciplinary designer exploring game design, UX, and business design!", action: "thinking" },
+          { text: "He's currently at FLAME University doing his Marketing MBA 🎓", action: "excited" },
+=======
           { text: "Psst... wanna play a game? 🎮 There are hidden Orbies scattered across this site! Can you find them all?", action: "excited" },
           { text: "Hint: We love hiding in unexpected places... keep your eyes peeled! 👀", action: "thinking" },
+>>>>>>> 72204df0c67283d261115d886294985171db093a
           { text: "Want to see what Ishaan's been working on? Check out his projects! 👇", action: "point", link: "#work", linkText: "See Projects" },
+<<<<<<< HEAD
+          { text: "From gamified productivity tools to interactive experiences — there's a lot to explore!", action: "love" },
+          { text: "Fun fact: Ishaan loves playing cards, tattoos, and cricket! A truly cultured human! 🎴", action: "excited" },
+=======
           { text: "Each hidden Orbie you find gets added to your collection. How many can you spot? ✨", action: "love" },
           { text: "Fun fact: Ishaan loves playing cards, bouldering, and crochet! A true Renaissance human! 🎴", action: "excited" },
+>>>>>>> 72204df0c67283d261115d886294985171db093a
           { text: "Psst... his resume is pretty impressive. Just saying! 📄", action: "point", link: "/resume", linkText: "View Resume" },
           { text: "Good luck on your Orbie hunt! We're sneaky little things! 😏", action: "wave" },
         ];
@@ -47,9 +57,9 @@ const Mascot = () => {
         return [
           { text: "Here's Ishaan's resume! 📄 Feel free to take a look around!", action: "wave" },
           { text: "He's got experience in game design, UX, and product design!", action: "thinking" },
-          { text: "Skills include Figma, Unity, Unreal, and business strategy tools! 🛠️", action: "excited" },
+          { text: "Skills include Figma, Unity, Unreal, and Davinci Resolve! 🛠️", action: "excited" },
           { text: "Relevant coursework spans both business and creative tech!", action: "love" },
-          { text: "You can download or share this resume if you'd like! 📥", action: "point" },
+          { text: "You can download, share, or frame this resume if you'd like! 📥", action: "point" },
           { text: "Ishaan's always learning and exploring new design challenges!", action: "thinking" },
         ];
       default:
