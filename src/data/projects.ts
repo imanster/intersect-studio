@@ -199,7 +199,7 @@ export const projects: Project[] = [
 
     gallery: [
       "https://images.unsplash.com/photo-1549921296-3cce38b6a8d3?w=800&auto=format",
-      "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?w=800&auto=format"
+      "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&auto=format"
     ],
   },
   {
@@ -300,7 +300,7 @@ export const projects: Project[] = [
 
     gallery: [
       "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800&auto=format",
-      "https://images.unsplash.com/photo-1509191436522-d296cf87d96c?w=800&auto=format"
+      "https://images.unsplash.com/photo-1556438064-2d7646166914?w=800&auto=format"
     ],
   },
 
