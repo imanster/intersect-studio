@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "Kuberos",
     disciplines: ["UX Design", "Education"],
     description: "Financial literacy platform for children.",
-    image: "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&auto=format",
+    image: "/images/kuberos.png",
     fullDescription: "Kuberos is a financial literacy platform designed to imbibe financial skills in children with the help of a mock economy. The platform's design focuses on creating a space for children to learn financial literacy by earning and spending money in the mock economy, resulting in a more practical learning environment.",
     detailedSections: [
       {
