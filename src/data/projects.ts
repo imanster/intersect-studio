@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "The Spark",
     disciplines: ["UI/UX Design", "Interaction Design", "Psychology"],
     description: "A psychology-informed study tool designed to help individuals with ADHD manage attention and reduce classroom distractions through controlled, low-cognitive interaction.",
-    image: "/images/TheSpark.png",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format",
     fullDescription: "This project was built with the objective of trying to make a meaningful impact in the daily life of ADHD patients. I built a study tool for people with ADHD and low attention spans to use in a classroom setting to help reduce distractions.",
     detailedSections: [
       {
