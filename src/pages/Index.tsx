@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import Footer from "@/components/Footer";
 import HiddenOrbie from "@/components/HiddenOrbie";
+import ExplosiveOrbie from "@/components/ExplosiveOrbie";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
@@ -133,6 +134,11 @@ const Index = () => {
         >
           <span className="text-xs uppercase tracking-widest text-muted-foreground">Scroll</span>
           <div className="w-px h-12 bg-gradient-to-b from-muted-foreground to-transparent" />
+        </div>
+
+        {/* Explosive Orbie - hidden in bottom-left corner */}
+        <div className="absolute bottom-8 left-8 z-20">
+          <ExplosiveOrbie />
         </div>
       </section>
 
