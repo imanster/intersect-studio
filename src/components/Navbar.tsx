@@ -32,7 +32,7 @@ const Navbar = () => {
           to="/" 
           className="font-display text-xl font-bold tracking-tight hover:text-primary transition-colors duration-300"
         >
-          PORTFOLIO
+          ISHAAN KARNANI
         </Link>
         
         <div className="flex items-center gap-8">
