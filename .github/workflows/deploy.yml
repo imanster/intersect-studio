@@ -32,6 +32,9 @@ jobs:
 
       - run: npm run build
 
+      - name: Copy all files and folders under public to dist
+        run: cp -r public/* dist/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
