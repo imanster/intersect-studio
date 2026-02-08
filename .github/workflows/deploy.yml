@@ -27,8 +27,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Patch BrowserRouter to HashRouter for subpath deployment
-        run: sed -i 's/BrowserRouter/HashRouter/g' src/App.tsx
+      - name: Patch sources for GitHub Pages subpath deployment
+        run: bash .github/scripts/patch-for-ghpages.sh
 
       - run: npm run build
 
