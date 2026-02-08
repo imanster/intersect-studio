@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "serve": "npx serve dist"
+    "serve": "rm -rf dist ; vite build && cp -r public/* dist/ && npx --yes http-server dist -p 3000"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
